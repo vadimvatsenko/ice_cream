@@ -1,0 +1,95 @@
+.contacts{
+    padding: 0;
+}
+
+.contacts__item + .contacts__item{
+    margin-top: 25px;
+}
+
+.contacts__item{
+    padding: 40px 32px;
+    background-color: $thirdTexColor;
+    height: 412px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.contacts__card--name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    margin-bottom: 20px;
+    padding: auto;
+    background-color: $thirdBgColor;
+    color: $thirdTexColor;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.contacts__card--town{
+    color: black;
+    margin-bottom: 8px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+}
+
+.contacts__card--title{
+    color: $fifthTextColor;
+    margin-bottom: 24px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.contacts__list--meta{
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 24px 0;
+    margin-bottom: 24px;
+}
+
+.contacts__meta--day{
+    color: black;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.contacts__item--meta + .contacts__item--meta{
+    margin-top: 8px;
+}
+
+.contacts__meta--time{
+    color: $secondTextColor;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.contacts__card--link{
+    color: $fifthTextColor;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.50;
+}
+
+.contacts__card--link:hover,
+.contacts__card--link:focus{
+    color: $mainTextColor;
+    cursor: pointer;
+}
