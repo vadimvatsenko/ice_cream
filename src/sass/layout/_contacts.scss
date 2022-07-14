@@ -24,7 +24,6 @@
     padding: auto;
     background-color: $thirdBgColor;
     color: $thirdTexColor;
-    font-family: 'DM Sans';
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -32,10 +31,14 @@
     text-transform: uppercase;
 }
 
+.green-bg {
+    width: 130px;
+    background-color: $fourthBgColor;
+}
+
 .contacts__card--town{
     color: black;
     margin-bottom: 8px;
-    font-family: 'DM Sans';
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -45,7 +48,6 @@
 .contacts__card--title{
     color: $fifthTextColor;
     margin-bottom: 24px;
-    font-family: 'DM Sans';
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
@@ -60,7 +62,6 @@
 
 .contacts__meta--day{
     color: black;
-    font-family: 'DM Sans';
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -72,7 +73,6 @@
 
 .contacts__meta--time{
     color: $secondTextColor;
-    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -81,7 +81,6 @@
 
 .contacts__card--link{
     color: $fifthTextColor;
-    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
