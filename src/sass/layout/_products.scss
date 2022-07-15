@@ -1,5 +1,5 @@
 .products {
-    background-color: #FFFFFF;
+    background-color: $thirdTexColor;
    
 }
 
@@ -8,7 +8,7 @@
    font-weight: 400;
    font-size: 18px;
    line-height: calc(21/18);
-   color:#FFA5BA ;
+   color:$secondTextColor ;
    text-transform: uppercase;
    text-align: center;
    margin-bottom: 15px;
@@ -22,14 +22,13 @@
    }
 }
 
-
 .products__title--main {
     font-family: Titan One;
     font-weight: 400;
     font-size: 34px;
     line-height: calc(39/34);
     letter-spacing: 0.04em;
-    color:#D41443 ;
+    color:$mainTextColor;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 8px;
@@ -47,13 +46,12 @@
 }
 
 
-
 .products__title--second {
     font-family: Titan One;
     font-weight: 400;
     font-size: 20px;
     line-height: calc(23/20);
-    color:#FFFFFF ;
+    color: $thirdTexColor ;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
@@ -83,7 +81,7 @@
     font-size: 14px;
     line-height: calc(21/14);
     letter-spacing: 0.04em;
-    color:#FFFFFF ;
+    color: $thirdTexColor ;
     text-align: center;
     margin-bottom: 32px;
     @include tablet {
@@ -97,7 +95,6 @@
 
     
 }
-
 
 .products__list {
     display: flex;  
@@ -120,12 +117,12 @@
 .products__item {
     @include mobile {
     width: 280px;
-    min-height: 489px;}
+    height: 489px;}
 
     @include tablet {
     width: calc((100% - 32px) / 3);
         
-    min-height: 473px;
+    height: 473px;
                  }
     @include desktop {
         width: calc((100% - 64px) / 3);
@@ -154,7 +151,7 @@
 }
 
 .ice-cream {
-    background-color: #FFB8CA;
+    background-color: $secondBgColor;
 }
 .ice-cream::before {
     background-image: url(../images/products/ice-cream-mob.png);
@@ -180,9 +177,8 @@
 
 }
 
-
 .ice-coffe {
-    background-color: #F0D1A5;
+    background-color: $thirdBgColor;
 }
 .ice-coffe::before {
     background-image: url(../images/products/ice-coffee-mob.png);
@@ -207,7 +203,7 @@
 } 
 
 .milkshakes {
-    background-color: #C2E297;
+    background-color: $fourthBgColor;
 }
 .milkshakes::before {
     background-image: url(../images/products/milkshake-mob.png);
@@ -266,15 +262,42 @@
 .products__button {
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: $thirdTexColor;
     border-radius: 50%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
    }
 
+.products__button:hover,
+.products__button:focus {
+    background-color: $mainBgColor;
+}
+
 .button__icon {
-    fill: #D41443;
+    fill: $mainTextColor;
     
 }
+
+.products__details {
+    width: 100%;
+    height: 200px;
+    background-color: $mainBgColor;
+    
+    text-align: center;
+    vertical-align: auto;
+    margin-top: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transform: translateY(-250px);
+    
+    transition: all 1000ms linear;
+   
+    }
