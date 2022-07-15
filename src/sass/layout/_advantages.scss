@@ -1,20 +1,41 @@
 .advantages {
   padding-top: 40px;
   padding-bottom: 60px;
+  padding-left: 20px;
   background-color: $mainBgColor;
+
+  @include tablet {
+    padding-top: 60px;
+    padding-left: 32px;
+  }
 }
 
-.contaier {
+.contaier-advantages {
   width: 100%;
-  padding-left: 20px;
   align-items: flex-start;
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.advant {
+  @include tablet {
+    display: flex;
+  }
 }
 
 .advant__item {
   margin-bottom: 32px;
-
   &:last-child {
     margin-bottom: 0px;
+  }
+  @include tablet {
+    width: 190px;
+    margin-bottom: 0px;
+    margin-left: 22px;
+    &:first-child {
+      margin-left: 0px;
+    }
   }
 }
 
@@ -32,6 +53,13 @@
   height: 56px;
   margin-top: 16px;
   margin-bottom: 4px;
+
+  @include tablet {
+    font-size: 48px;
+
+    margin-top: 36px;
+    margin-bottom: 13px;
+  }
 }
 
 .advant__descr {
@@ -44,4 +72,9 @@
   color: $fourthTextColor;
 
   max-width: 230px;
+
+  @include tablet {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
 }
