@@ -8,6 +8,10 @@
     font-weight: 700;
     font-size: 16px;
     background-color: $thirdTexColor;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     border-radius: 22px;
 
@@ -15,7 +19,8 @@
 
     &:hover,
     &:focus {
-        background-color: $hoverLiteButton;
+        background-color: $hoverBtnColor;
+        color: $hoverTextBtncolor;
     }
 }
 
@@ -23,5 +28,42 @@
     margin-left: 12px;
     fill: currentColor;
     padding: 10px 12px;
-
 }
+
+.button-buy {
+    display: none;
+
+    @include tablet {
+        display: block;
+        width: 160px;
+        height: 44px;
+    }
+}
+
+.btn__bio-eco {
+    @include tablet {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+        margin-top: 7px;
+
+        &:hover,
+        &:focus {
+            background-color: $hoverBtnColor;
+            color: $hoverTextBtncolor;
+        }
+    }
+
+    .btn__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: #D41443;
+    }
+}
+
+
