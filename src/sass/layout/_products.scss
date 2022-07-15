@@ -1,15 +1,5 @@
 .products {
     background-color: #FFFFFF;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @include tablet {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    @include desktop {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
    
 }
 
@@ -46,10 +36,12 @@
     @include tablet {
     font-size: 48px;
     line-height: calc(55/48);
+    margin-bottom: 20px;
 }
     @include desktop {
     font-size: 58px;
     line-height: calc(66/58);
+    
     }
 
 }
@@ -98,8 +90,9 @@
     line-height: calc(25/14);    
     }
     @include desktop {
-        font-size: 16px;
-        line-height: calc(28/16);
+    font-size: 16px;
+    line-height: calc(28/16);
+    
             }
 
     
@@ -120,31 +113,43 @@
      
     gap: 16px;   
     }
+    @include desktop {
+    gap: 32px;
+    }
 }
 .products__item {
-    max-width: 280px;
-    min-height: 489px;
+    @include mobile {
+    width: 280px;
+    min-height: 489px;}
 
     @include tablet {
-        width: calc((100% - 32px) / 3);
-        min-height: 473px;
+    width: calc((100% - 32px) / 3);
+        
+    min-height: 473px;
                  }
     @include desktop {
         width: calc((100% - 64px) / 3);
-        min-height: 796px;
+        
+        height: 535px;
                  }
 
 }
 
-.products__wrap {
+.products__item {
  
  border-radius: 24px;
- padding: 160px 39px 40px 39px;
- margin-top: 140px;
-
+ padding: 160px 39px 40px 41px;
  
  position: relative;
-
+ margin-top: 140px;
+ @include tablet {
+    margin-top: 160px;
+    padding: 110px 32px 40px 32px;
+ }
+ @include desktop {
+    margin-top: 280px;
+    padding: 165px 62px 60px 61px;
+ }
  
 }
 
@@ -167,6 +172,7 @@
 
     @include desktop {
     background-image: url(../images/products/ice-cream.png); 
+    
     @include retinaBgImg {
     background-image: url(../images/products/ice-cream-2x.png);   
     }
@@ -225,28 +231,50 @@
                       }
 } 
 
-.products__wrap::before {
+.products__item::before {
   content: "";  
   width: 280px;
   height: 280px;
 
   position: absolute;
   top:-140px;
-  left:0;
-
-
+  left:0px;
 }
+
+  .products__item::before {
+    @include tablet {
+    content: "";
+    position: absolute;
+    width: 224px;
+    height: 224px;
+    top:-140px;
+    left:0;
+}
+  }
+
+  .products__item::before {
+    @include desktop {
+    content: "";
+    position: absolute;
+    width: 368px;
+    height: 394px;
+    top:-270px;
+    left:0;
+}
+  }
 
 .products__button {
     width: 40px;
     height: 40px;
     background-color: #fff;
     border-radius: 50%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
    }
 
 .button__icon {
     fill: #D41443;
-    margin: 0 auto;
+    
 }
