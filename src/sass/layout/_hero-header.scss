@@ -1,11 +1,12 @@
 header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 32px;
+    padding-bottom: 20px;
     position: absolute;
     width: 100%;
     z-index: 2;
 
     overflow: hidden;
+
 }
 
 .header__mobile {
@@ -13,6 +14,9 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @include tablet {
+        display: flex;
+    }
 }
 
 .menu__item {
@@ -49,18 +53,32 @@ header {
     font-size: 16px;
     color: $thirdTexColor;
     padding-left: 20px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $hoverBtnColor;
+    }
+}
+
+.menu-button__open {
+    @include tablet {
+        margin-left: 293px;
+        margin-right: 32px;
+    }
 }
 
 .menu-button__close {
     position: absolute;
     right: 20px;
     top: 20px;
-
 }
 
 .menu {
     margin-top: 32px;
-
 }
 
 .mobile-button-buy {
@@ -76,19 +94,19 @@ header {
 // HERO
 .hero {
     position: relative;
-    min-height: 502px;
+    min-height: 416px;
     overflow: hidden;
     background-color: $secondBgColor;
-
-
-
 
     padding-top: 194px;
     padding-bottom: 158px;
     z-index: 1;
+
+    @include tablet {
+        padding-top: 102px;
+        padding-bottom: 190px;
+    }
 }
-
-
 
 .hero__title {
     width: 218px;
@@ -97,10 +115,9 @@ header {
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
-    line-height: 0.96;
+    line-height: 1;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
 
     &--red {
         font-size: 48px;
@@ -108,8 +125,7 @@ header {
     }
 }
 
-
-
+/*---hero__circle*/
 .hero__circle {
     display: block;
     position: absolute;
@@ -118,10 +134,123 @@ header {
     width: 346px;
     height: 346px;
     border-radius: 50%;
+
     background-color: $secondTextColor;
     z-index: -1;
+
+    @include tablet {
+        position: absolute;
+        width: 335px;
+        height: 333px;
+        left: 268px;
+        top: 48px;
+    }
 }
 
+.hero__circle-img {
+    position: absolute;
+    left: 85px;
+    top: 10px;
+
+    @include tablet {
+        width: 143px;
+        height: 336px;
+        top: 55px;
+    }
+}
+
+/*---hero__number*/
+.hero__number-cafes {
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: absolute;
+        width: 33px;
+        height: 32px;
+        left: 693px;
+        top: 94px;
+    
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+}
+
+.hero__number-food {
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 32px;
+        left: 692px;
+        top: 153px;
+    
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+}
+
+.hero__text-cafes {
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 10px;
+        left: 706px;
+        top: 126px;
+    
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+    
+        color: $whiteTextColor;
+    }
+}
+
+.hero__text-food {
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: absolute;
+        width: 43px;
+        height: 10px;
+        left: 685px;
+        top: 185px;
+        
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+
+        color: $whiteTextColor;
+    }
+}
+
+/*---hero-buttons*/
 .hero-buttons {
     display: flex;
     margin-top: 20px;
@@ -134,4 +263,55 @@ header {
 
 .hero-buttons__btn--accent {
     margin-left: 8px;
+}
+
+/*---hero__slider-pic*/
+.hero__slider-pic {
+    display: none;
+    
+    @include tablet {
+        display: flex;
+    }
+}
+
+.hero__bg-milk {
+    @include tablet {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-left: 32px;
+        padding-bottom: 16px;
+    }
+}
+
+.hero__text-milk {
+    @include tablet {
+        position: absolute;
+        width: 114px;
+        height: 48px;
+        left: 184px;
+        top: 287px;
+        padding-top: 20px;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 150%;
+    
+        color: #FFFFFF;
+    }
+}
+
+.hero__bg-girl {
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-top: 25px;
+        padding-right: 32px;
+    }
 }
