@@ -1,8 +1,12 @@
 .gallary {
   padding-top: 30px;
-  background-image: linear-gradient(to bottom, $mainBgColor 60px, $thirdTexColor 60px, $thirdTexColor 100%);
+  background-image: linear-gradient(
+    to bottom,
+    $mainBgColor 60px,
+    $thirdTexColor 60px,
+    $thirdTexColor 100%
+  );
 }
-
 
 .gallery img {
   height: 100%;
@@ -11,6 +15,7 @@
 .gallery {
   // background: #fff;
   max-width: 1200px;
+  width: 100%;
 }
 
 /* clearfix */
@@ -32,7 +37,8 @@
   //   height: 120px;
   margin-bottom: 2.5px;
   float: left;
-
+  margin-left: auto;
+  margin-right: auto;
   transition-duration: 250ms;
   transition-property: transform;
 
@@ -70,6 +76,11 @@
 .gallery-item--solo {
   margin-bottom: 45px;
   margin-top: 45px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
 }
 
 // .gallery-item--duet {
