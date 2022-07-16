@@ -1,8 +1,9 @@
 section {
-    padding-top: 48px;
-    padding-bottom: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @include tablet {
+
+  @include tablet {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -11,4 +12,9 @@ section {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+  &--bg-white {
+    background-color: #ffffff;
+  }
 }
+
