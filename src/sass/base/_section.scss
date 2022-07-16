@@ -1,14 +1,18 @@
 section {
-    padding-top: 48px;
-    padding-bottom: 48px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 
-    @include tablet {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-    @include desktop {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  &--bg-white {
+    background-color: #ffffff;
+  }
 }
