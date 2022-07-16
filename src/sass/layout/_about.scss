@@ -2,6 +2,8 @@
   padding-bottom: 20px;
 }
 
+
+
 .about-img-box {
   width: 100%;
   justify-content: center;
@@ -78,7 +80,7 @@
 }
 
 .about-content-black {
-  margin: 0 auto;
+  // margin: 0 auto;
   position: relative;
   font-family: 'DM Sans';
   font-style: normal;
@@ -87,6 +89,11 @@
   line-height: 1.62;
   color: #000000;
   width: 220px;
+
+  @media screen and (min-width:321px) and (max-width:768px) {
+    width: 100%;
+
+  }
 
   @include tablet {
 
@@ -103,12 +110,35 @@
   }
 }
 
+.box {
+  @include mobile {
+    background-image: url(../images/about/bg-milk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 70px;
+  }
+
+
+  @include retinaBgImg {
+    background-image: url(../images/about/bg-milk-2x.png);
+  }
+
+  @media screen and (min-width:321px) and (max-width:479px) {
+    background-position: 0 55px;
+  }
+
+  @media screen and (min-width:480px) and (max-width:767px) {
+    background-position: 0 15px;
+  }
+
+  @include tablet {
+    background-image: none
+  }
+}
+
 .about-box {
   margin-top: 40px;
-  max-width: 280px;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 
   @include tablet {
     max-width: 334px;
@@ -124,12 +154,7 @@
 }
 
 .about-content-grey {
-  margin: 0 auto;
-  background-image: url(../images/about/bg-milk.png);
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: contain;
-  padding-top: 25px;
+  margin-top: 25px;
   position: relative;
   display: block;
   font-family: 'DM Sans';
@@ -141,21 +166,23 @@
   width: 220px;
   height: auto;
 
-  @include retinaBgImg {
-    background-image: url(../images/about/bg-milk-2x.png);
+  @media screen and (min-width:321px) and (max-width:767px) {
+    width: 100%;
   }
 
   @include tablet {
     background-image: none;
-    margin-top: 40px;
+    margin-top: 25px;
     width: 334px;
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: 0.04em;
-    margin: 0;
+
   }
 
   @include desktop {
+    padding-top: 0;
+    margin-top: 32px;
     width: 463px;
 
   }
@@ -191,7 +218,7 @@
 
 .about-button-icon {
   margin-left: 10px;
-  fill: #d41443;
+  fill: $mainTextColor;
 }
 
 .backdrop {
@@ -206,11 +233,10 @@
 }
 
 .modal {
-  width: 100%;
-  background-color: #c2e297;
+  background-color: $mainBgColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
+  border-radius: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -218,20 +244,16 @@
   transition: transform 300ms;
   z-index: 20;
 
-  @media screen and (min-width: 320px) {
-    width: 95vw;
-    height: auto;
+  @include mobile {
+    width: 100vw;
+    height: 100vh;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 450px;
     height: auto;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 450px;
-    height: 450px;
-  }
 }
 
 .backdrop.is-hidden.modal {
@@ -267,9 +289,10 @@
 }
 
 .modal-title {
+  font-family: 'Titan One';
   text-align: center;
   font-size: 24px;
-  line-height: 23px;
+  line-height: 1.5;
   font-weight: 700;
   padding-bottom: 12px;
 }
@@ -283,15 +306,20 @@
   display: block;
   font-size: 16px;
   font-weight: 400px;
-  line-height: 1.17;
+  line-height: 1.5;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $fifthTextColor;
   padding-bottom: 4px;
   padding-top: 10px;
 }
 
 .icon-close-button {
-  fill: #d41443;
+  fill: $mainTextColor;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // &:hover,
+  // &:focus {
+  //   background-color: #fff;
+  // }
 }
