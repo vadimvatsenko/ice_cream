@@ -20,7 +20,7 @@
     background-position: center;
     background-size: cover;
     justify-content: center;
-    // min-width: 280px;
+
 
     @include retinaBgImg {
       background-image: url(../images/about/bg-milk-2x.png);
@@ -78,6 +78,7 @@
 }
 
 .about-content-black {
+  margin: 0 auto;
   position: relative;
   font-family: 'DM Sans';
   font-style: normal;
@@ -123,6 +124,7 @@
 }
 
 .about-content-grey {
+  margin: 0 auto;
   background-image: url(../images/about/bg-milk.png);
   background-repeat: no-repeat;
   background-position: left top;
