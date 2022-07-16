@@ -1,7 +1,6 @@
 .advantages {
-  padding-top: 40px;
-  padding-bottom: 60px;
-  background-color: $mainBgColor;
+  padding-top: 20px;
+  padding-bottom: 30px;
 
   @include tablet {
     padding-top: 60px;
@@ -16,6 +15,7 @@
   width: 100%;
   align-items: flex-start;
 }
+
 .advant {
   @include tablet {
     display: flex;
@@ -24,21 +24,26 @@
 
 .advant__item {
   margin-bottom: 32px;
+
   &:last-child {
     margin-bottom: 0px;
   }
+
   @include tablet {
     width: 190px;
     margin-bottom: 0px;
     margin-left: 22px;
+
     &:first-child {
       margin-left: 0px;
     }
   }
+
   @include desktop {
     width: 300px;
     margin-left: 115px;
   }
+
   &:first-child {
     margin-left: 0px;
   }
