@@ -1,5 +1,10 @@
 .gallary {
   padding-top: 30px;
+  background-image: linear-gradient(to bottom, $mainBgColor 60px, $thirdTexColor 60px, $thirdTexColor 100%);
+}
+
+.customer-reviews {
+  background-color: $thirdTexColor;
 }
 
 .gallery img {
@@ -70,9 +75,9 @@
   margin-top: 45px;
 }
 
-.gallery-item--duet {
-  margin-top: 25px;
-}
+// .gallery-item--duet {
+//   margin-top: 25px;
+// }
 
 // .gallery-item--after {
 //   margin-top: 25px;
