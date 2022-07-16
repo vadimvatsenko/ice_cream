@@ -2,8 +2,6 @@
   padding-bottom: 20px;
 }
 
-
-
 .about-img-box {
   width: 100%;
   justify-content: center;
@@ -28,6 +26,19 @@
       background-image: url(../images/about/bg-milk-2x.png);
     }
   }
+}
+
+.box {
+  background-image: url(../images/about/bg-milk-mob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 75px;
+
+  @include retinaBgImg {
+    background-image: url(../images/about/bg-milk-mob-2x.png)
+  }
+
+
 }
 
 .about-img__cow {
@@ -80,7 +91,6 @@
 }
 
 .about-content-black {
-  // margin: 0 auto;
   position: relative;
   font-family: 'DM Sans';
   font-style: normal;
@@ -89,11 +99,6 @@
   line-height: 1.62;
   color: #000000;
   width: 220px;
-
-  @media screen and (min-width:321px) and (max-width:768px) {
-    width: 100%;
-
-  }
 
   @include tablet {
 
@@ -111,26 +116,6 @@
 }
 
 .box {
-  @include mobile {
-    background-image: url(../images/about/bg-milk.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 70px;
-  }
-
-
-  @include retinaBgImg {
-    background-image: url(../images/about/bg-milk-2x.png);
-  }
-
-  @media screen and (min-width:321px) and (max-width:479px) {
-    background-position: 0 55px;
-  }
-
-  @media screen and (min-width:480px) and (max-width:767px) {
-    background-position: 0 15px;
-  }
-
   @include tablet {
     background-image: none
   }
@@ -165,10 +150,6 @@
   color: #907e82;
   width: 220px;
   height: auto;
-
-  @media screen and (min-width:321px) and (max-width:767px) {
-    width: 100%;
-  }
 
   @include tablet {
     background-image: none;
@@ -249,12 +230,12 @@
     height: 100vh;
   }
 
-  @include tablet {
+  @media screen and (min-width: 480px) {
     width: 450px;
     height: auto;
   }
-
 }
+
 
 .backdrop.is-hidden.modal {
   transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
@@ -318,8 +299,4 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  // &:hover,
-  // &:focus {
-  //   background-color: #fff;
-  // }
 }

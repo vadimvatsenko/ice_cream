@@ -3,5 +3,9 @@ body {
     background-color: $mainBgColor ;
     color: $mainTextColor;
     font-style: 500;
-    
+
+}
+
+.no-scroll {
+    overflow: hidden;
 }

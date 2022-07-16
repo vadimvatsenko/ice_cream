@@ -38,16 +38,26 @@ header {
     background-color: $fifthBgColor;
     padding: 65px 0;
     top: 0;
-    left: 0;
+    // left: 0;
+    right: 0;
     height: 100vh;
     width: 100%;
     z-index: 2;
     overflow-y: auto;
     // @include transition (translateX);
+    box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
     @include transition (translateX);
 
     &.is-hidden {
         transform: translateX(100%);
+    }
+
+    @include tablet {
+        width: 254px;
+        // right: 0;
+
+
+
     }
 }
 
@@ -168,7 +178,7 @@ header {
 
     border-radius: 50%;
     margin: 0;
-    
+
     background-color: $secondTextColor;
     z-index: -2;
 
@@ -194,7 +204,7 @@ header {
 .hero__circle-img {
     position: absolute;
     margin: 0;
-    left:65px;
+    left: 65px;
     top: 10px;
     width: 171px;
     height: 410px;
@@ -226,6 +236,7 @@ header {
         padding-top: 72px;
     }
 }
+
 .hero__number-item {
     display: none;
 
@@ -235,13 +246,13 @@ header {
         flex-direction: column;
         position: relative;
 
-    &:after {
-        content: "";
+        &:after {
+            content: "";
             display: block;
             position: absolute;
             right: 3;
             top: 0;
-            
+
             width: 16px;
             height: 16px;
             border-radius: 50%;
@@ -285,13 +296,13 @@ header {
         height: 53px;
         left: 1112px;
         top: 156px;
-    
+
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
         font-size: 46px;
         line-height: 53px;
-        
+
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
@@ -307,18 +318,18 @@ header {
         flex-direction: column;
         position: relative;
 
-    &:after {
-        content: "";
+        &:after {
+            content: "";
             display: block;
             position: absolute;
             right: 2;
             top: -1;
-            
+
             width: 16px;
             height: 16px;
             border-radius: 50%;
             background-color: $whiteBgColor;
-            
+
             z-index: -1;
 
             @include desktop {
@@ -336,7 +347,7 @@ header {
 
     @include tablet {
         display: block;
-        
+
         width: 36px;
         height: 32px;
         left: 692px;
@@ -359,13 +370,13 @@ header {
         height: 53px;
         left: 1107px;
         top: 247px;
-    
+
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
         font-size: 46px;
         line-height: 53px;
-    
+
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
@@ -377,7 +388,7 @@ header {
 
     @include tablet {
         display: block;
-        
+
         width: 20px;
         height: 10px;
         left: 706px;
@@ -411,7 +422,7 @@ header {
 
     @include tablet {
         display: block;
-        
+
         width: 43px;
         height: 10px;
         left: 685px;
@@ -495,8 +506,8 @@ header {
 
 .hero__img-milk {
     @include desktop {
-    width: 213px;
-        
+        width: 213px;
+
     }
 }
 

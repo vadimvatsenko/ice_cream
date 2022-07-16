@@ -1,12 +1,12 @@
-.contacts{
+.contacts {
     padding: 0;
 }
 
-.contacts__item + .contacts__item{
+.contacts__item+.contacts__item {
     margin-top: 25px;
 }
 
-.contacts__item{
+.contacts__item {
     padding: 40px 32px;
     background-color: $thirdTexColor;
     height: 412px;
@@ -14,7 +14,7 @@
     border-radius: 24px;
 }
 
-.contacts__card--name{
+.contacts__card--name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@
     background-color: $fourthBgColor;
 }
 
-.contacts__card--town{
+.contacts__card--town {
     color: black;
     margin-bottom: 8px;
     font-weight: 500;
@@ -45,7 +45,7 @@
     letter-spacing: 0.04em;
 }
 
-.contacts__card--title{
+.contacts__card--title {
     color: $fifthTextColor;
     margin-bottom: 24px;
     font-weight: 500;
@@ -53,25 +53,25 @@
     line-height: 18px;
 }
 
-.contacts__list--meta{
+.contacts__list--meta {
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
     padding: 24px 0;
     margin-bottom: 24px;
 }
 
-.contacts__meta--day{
+.contacts__meta--day {
     color: black;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
 }
 
-.contacts__item--meta + .contacts__item--meta{
+.contacts__item--meta+.contacts__item--meta {
     margin-top: 8px;
 }
 
-.contacts__meta--time{
+.contacts__meta--time {
     color: $secondTextColor;
     font-style: normal;
     font-weight: 500;
@@ -79,7 +79,7 @@
     line-height: 1.86;
 }
 
-.contacts__card--link{
+.contacts__card--link {
     color: $fifthTextColor;
     font-style: normal;
     font-weight: 500;
@@ -88,7 +88,7 @@
 }
 
 .contacts__card--link:hover,
-.contacts__card--link:focus{
+.contacts__card--link:focus {
     color: $mainTextColor;
     cursor: pointer;
 }
