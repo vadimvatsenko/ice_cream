@@ -19,12 +19,21 @@
 
     &:hover,
     &:focus {
-        background-color: $hoverBtnColor;
-        color: $hoverTextBtncolor;
+        background-color: $hoverLiteButton;
+    }
+}
 
-        &.button__arrow {
-            fill: $hoverTextBtncolor ;
-        }
+.current-btn {
+    background-color: $currentBgGolor;
+    color: $whiteTextColor;
+
+    &:hover {
+        color: $hoverBtnColor;
+    }
+
+    @include desktop {
+        width: 107px;
+        height: 40px;
     }
 }
 
@@ -49,16 +58,24 @@
         position: relative;
         width: 18px;
         height: 18px;
-        background-color: #fff;
+        background-color: $whiteBgColor;
         border-radius: 50%;
         display: block;
         margin-top: 7px;
 
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover,
         &:focus {
-            background-color: $hoverBtnColor;
-            color: $hoverTextBtncolor;
+            background-color: $hoverLiteButton;
         }
+    }
+
+    @include desktop {
+        width: 26px;
+        height: 26px;
     }
 
     .btn__icon {
