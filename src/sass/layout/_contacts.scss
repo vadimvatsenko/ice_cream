@@ -1,20 +1,64 @@
 .contacts {
     padding: 0;
+    background-image: linear-gradient(to bottom,
+        $thirdTexColor 24%,
+        $mainBgColor 24%);
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to bottom,
+            $thirdTexColor 55%,
+            $mainBgColor 55%);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to bottom,
+            $thirdTexColor 19%,
+            $mainBgColor 19%);
+    }
 }
 
 .contacts__item+.contacts__item {
     margin-top: 25px;
+    
+    @media screen and (min-width: 768px){
+        margin-left: 32px;
+        margin-top: 0;
+    }
+}
+
+.contacts__list{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .contacts__item {
     padding: 40px 32px;
     background-color: $thirdTexColor;
+    max-width: 280px;
     height: 412px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 224px;
+        height: 528px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 368px;
+        height: 538px;
+        padding: 40px;
+    }
 }
 
-.contacts__card--name {
+.contacts__card-name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,71 +68,134 @@
     padding: auto;
     background-color: $thirdBgColor;
     color: $thirdTexColor;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px){
+        font-size: 16px;
+        margin-bottom: 32px;
+        width: 73px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 75px;
+    }
 }
 
-.green-bg {
+.contacts__card-name--green{
     width: 130px;
     background-color: $fourthBgColor;
+
+    @media screen and (min-width: 768px){
+        width: 138px;
+    }
 }
 
-.contacts__card--town {
+.contacts__card-town {
     color: black;
     margin-bottom: 8px;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+    }
 }
 
-.contacts__card--title {
+.contacts__card-title {
     color: $fifthTextColor;
+    width: 179px;
     margin-bottom: 24px;
-    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
+
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        width: 159px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+        width: 243px;
+    }  
 }
 
-.contacts__list--meta {
+.contacts__list-meta {
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
     padding: 24px 0;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 32px;
+        padding: 32px 0;
+    }
 }
 
-.contacts__meta--day {
+.contacts__meta-day {
     color: black;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 
-.contacts__item--meta+.contacts__item--meta {
+.contacts__item-meta+.contacts__item-meta {
     margin-top: 8px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 12px;
+    }
 }
 
-.contacts__meta--time {
+.contacts__meta-time {
     color: $secondTextColor;
     font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 
-.contacts__card--link {
+.contacts__card-link {
     color: $fifthTextColor;
     font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.50;
+    @include transition (color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 
-.contacts__card--link:hover,
-.contacts__card--link:focus {
+.contacts__card-link:hover,
+.contacts__card-link:focus {
     color: $mainTextColor;
     cursor: pointer;
 }
