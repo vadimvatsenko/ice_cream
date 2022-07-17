@@ -1,164 +1,412 @@
-.footer{
-    padding-top: 40px;
-    
-    background-color: $mainBgColor;
-    @media screen and (min-width:768px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.footer {
+  padding-top: 40px;
 
-    @media screen and (min-width:1200px) {
-        padding-top: 120px;
-    }
+  background-color: $mainBgColor;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+  }
 }
-.ftr__title{
-    @media screen and (min-width:320px) {
-        width: 234px;
-    }
 
-    @media screen and (min-width:768px) {
-        width: 350px;
-        display: flex;
-        flex-direction: column;
-    }
-    @media screen  and (min-width:1200px) {
-        width: 500px;
-    }
+.ftr-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
-.ftr__title--first{
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 39px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
 
-    color: $mainTextColor;
-    @media screen and (min-width:320px) {
-        padding-top: 16px;
-    }
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
-    @media screen and (min-width:768px) {
-        font-size: 48px;
-        line-height: 55px;
-        padding-bottom: 40px;
-        padding-top: 12px;
-    }
+  margin-bottom: 40px;
 
-    @media screen and (min-width:1200px) {
-        font-size: 58px;
-        line-height: 66px;
-        letter-spacing: 0.06em;
-        padding-bottom: 60px;
-        padding-top: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
-.ftr__title--second{
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
 
-    color: $secondTextColor;
+.ftr__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0 17px;
+  background-color: $currentBgGolor;
+  color: $thirdTexColor;
 
-    @media screen and (min-width:768px) {
-        font-size: 26px;
-        line-height: 30px;
-    }
+  &:hover,
+  &:focus {
+    background-color: $thirdTexColor;
+    color: $currentBgGolor;
+  }
 
-    @media screen and (min-width:1200px) {
-        font-size: 30px;
-        line-height: 34px;
-        letter-spacing: 0.04em;
-        }
+  &--submit {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.ftr__contact{
 
+.ftr-button__icon {
+  margin-left: 8px;
+}
+
+.ftr__title {
+  @media screen and (min-width: 320px) {
+    width: 234px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
     display: flex;
     flex-direction: column;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 186%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+  }
+}
+.ftr__title--first {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $mainTextColor;
+  @media screen and (min-width: 320px) {
+    padding-top: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 55px;
     padding-bottom: 40px;
-    @media screen and (min-width:768px) {
-        font-size: 14px;
-    }
+    padding-top: 12px;
+  }
 
-    @media screen and (min-width:1200px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    padding-bottom: 60px;
+    padding-top: 16px;
+  }
 }
-.ftr__tel{
-    display: flex;
-    justify-content: flex-end;
-}
-.ftr__tel--action{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 2px;
-    color: #000000;
-}
-.ftr__tel--number{
-    display: flex;
-    justify-content: flex-end;
-    color: $mainTextColor;
-}
-.ftr__social--list{
-    display: flex;
-    justify-content: flex-end;
+.ftr__title--second {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
 
-    & .ftr__social__icon + .ftr__social__icon {
-        padding-left: 30px;
-    }
+  color: $secondTextColor;
 
-    @media screen and (min-width:320px) {
-        padding: 40px 0;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+  }
+}
+.ftr__contact {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+.ftr__tel {
+  display: flex;
+  justify-content: flex-end;
+}
+.ftr__tel--action {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2px;
+  color: #000000;
+}
+.ftr__tel--number {
+  display: flex;
+  justify-content: flex-end;
+  color: $mainTextColor;
+}
+.ftr__social--list {
+  display: flex;
+  justify-content: flex-end;
+
+  & .ftr__social__icon + .ftr__social__icon {
+    padding-left: 30px;
+  }
+
+  @media screen and (min-width: 320px) {
+    padding: 40px 0;
+  }
 }
 
 .ftr__link {
-    fill: $secondTextColor;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.23, .63, .71, .51);
-    &:hover ,
-    &:focus {
-        fill: $mainTextColor;
-    }
+  fill: $secondTextColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.23, 0.63, 0.71, 0.51);
+  &:hover,
+  &:focus {
+    fill: $mainTextColor;
+  }
 }
 
 .ftr__icon {
-    width:32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 
-    @media screen and (min-width:768px) {
-        width: 34px;
-        height: 34px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
-.ftr__copyright__holder{
+.ftr__copyright__holder {
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+}
+.ftr__copyright__holder--title {
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: $fifthTextColor;
+
+  @media screen and (min-width: 320px) {
+    margin: 0 auto;
+    width: 150px;
+    padding-bottom: 3px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 100%;
-    border-top: 1px solid #E1E1E1;
+  }
 }
-.ftr__copyright__holder--title{
-    padding-top: 16px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 152%;
-    text-align: center;
-    color: $fifthTextColor;
 
-    @media screen and (min-width:320px) {
-        margin: 0 auto;
-        width: 150px;
-        padding-bottom: 3px;
-    }
-    
-    @media screen and (min-width:768px) {
-        width: 100%;
-    }
+// map-map
+
+.map__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
 }
+
+.map__bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 10px;
+  background: $secondBgColor;
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
+
+  @include tablet {
+    width: calc(100vw - 30px);
+    height: calc(100vh - 50px);
+  }
+
+  @include desktop {
+    width: 1000px;
+    height: calc(100vh - 100px);
+  }
+
+  padding: 40px;
+  transition: 250ms all;
+}
+
+.map.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 250ms all;
+}
+
+.close-map {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $currentBgGolor;
+  transition: background-color linear 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $mainBgColor;
+  }
+}
+
+.g-map {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+//franchise
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  border-radius: 10px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
+
+  @include tablet {
+    width: 450px;
+  }
+
+  padding: 25px;
+  transition: 0.5s all;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $currentBgGolor;
+  transition: background-color linear 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $mainBgColor;
+  }
+}
+
+.popup label {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.popup .label__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $secondBgColor;
+  margin-bottom: 5px;
+}
+
+.popup input {
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $secondBgColor;
+}
+
+.popup__text {
+  color: $mainTextColor;
+}
+
+.popup input:focus {
+  border-bottom: 1px solid $currentBgGolor;
+}
+
+.popup input:focus + .label__text {
+  color: $currentBgGolor;
+}
+
+.popup textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $secondBgColor;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.popup textarea:focus {
+  border-bottom: 1px solid $currentBgGolor;
+}
+
+.popup textarea:focus + .label__text {
+  color: $currentBgGolor;
+}
+
+// .popup button {
+//   width: 100%;
+//   height: 45px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: #fff;
+//   font-size: 18px;
+//   border: 2px solid #2982ff;
+//   background: #2982ff;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   transition: 0.5s all;
+// }
+
+// .popup button:hover {
+//   background: #fff;
+//   color: #2982ff;
+//   transition: 0.5s all;
+// }
