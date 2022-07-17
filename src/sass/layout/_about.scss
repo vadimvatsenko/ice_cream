@@ -21,7 +21,6 @@
     background-size: cover;
     justify-content: center;
 
-
     @include retinaBgImg {
       background-image: url(../images/about/bg-milk-2x.png);
     }
@@ -35,10 +34,8 @@
   background-position: 0 75px;
 
   @include retinaBgImg {
-    background-image: url(../images/about/bg-milk-mob-2x.png)
+    background-image: url(../images/about/bg-milk-mob-2x.png);
   }
-
-
 }
 
 .about-img__cow {
@@ -99,9 +96,13 @@
   line-height: 1.62;
   color: #000000;
   width: 220px;
+  @media screen and (min-width: 480px) {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   @include tablet {
-
     font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
@@ -117,7 +118,7 @@
 
 .box {
   @include tablet {
-    background-image: none
+    background-image: none;
   }
 }
 
@@ -150,6 +151,11 @@
   color: #907e82;
   width: 220px;
   height: auto;
+  @media screen and (min-width: 480px) {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   @include tablet {
     background-image: none;
@@ -158,14 +164,12 @@
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: 0.04em;
-
   }
 
   @include desktop {
     padding-top: 0;
     margin-top: 32px;
     width: 463px;
-
   }
 }
 
@@ -185,7 +189,7 @@
   margin-top: 20px;
   margin-right: 0;
 
-  @include transition (background-color);
+  @include transition(background-color);
 
   &:hover,
   &:focus {
@@ -235,7 +239,6 @@
     height: auto;
   }
 }
-
 
 .backdrop.is-hidden.modal {
   transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
@@ -298,5 +301,4 @@
   fill: $mainTextColor;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }

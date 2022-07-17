@@ -1,0 +1,79 @@
+<div class="backdrop-header is-hidden" header-modal>
+    <form class="fieldset" role="group" autocomplete="on" id="buy">
+        <h2 class="fieldset__title">Please order</h2>
+        <button class="fieldset__close-btn" type="button" modal-close>
+            <svg class="fieldset__close-icon" width="14" height="14">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="fieldset__wrap">
+            <div class="label-wrap">
+                <label class="label-wrap__name" for="name" autofocus>Name</label>
+                <input class="label-wrap__input" type="text" name="name" id="name" required>
+            </div>
+            <div class="label-wrap">
+                <label class="label-wrap__name" for="tel">Phone</label>
+                <input class="label-wrap__input" type="tel" name="tel" id="tel" required>
+            </div>
+            <div class="label-wrap">
+                <label for="product" class="label-wrap__name">City</label>
+                <select class="label-wrap__input" id="product" name="product">
+                    <option value="CH" selected>Chicago</option>
+                    <option value="LA">Los Angeles</option>
+                    <option value="NY">New York</option>
+                </select>
+
+            </div>
+            <div class="label-wrap">
+                <label for="city" class="label-wrap__name">Product</label>
+                <select class="label-wrap__input" id="city" name="city">
+                    <option value="IC" selected>ICE CREAM</option>
+                    <option value="IF">ICE COFFEE</option>
+                    <option value="M">MILKSHAKES</option>
+
+                </select>
+            </div>
+            <div class="product-wrap">
+                <div class="label-wrap product-wrap__title">Size
+                    <div class="radio-wrap">
+                        <input type="radio" name="size" id="es">
+                        <label for="es" class="label-wrap__name label-radio">Extra Small</label>
+                        <input type="radio" name="size" id="s">
+                        <label for="s" class="label-wrap__name label-radio">Small</label>
+                        <input type="radio" name="size" checked="checked" id="m">
+                        <label for="m" class="label-wrap__name label-radio">Medium</label>
+                        <input type="radio" name="size" id="l">
+                        <label for="l" class="label-wrap__name label-radio">Large</label>
+                    </div>
+                </div>
+                <div class="label-wrap number">
+                    <label class="label-wrap__name" for="quantity">How many?</label>
+                    <div class="number_controls">
+                        <div class="nc-minus"><svg class="nc-plus__minus" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-minus"></use>
+                            </svg></div>
+                        <input class="label-wrap__input input-quantity" type="number" name="quantity" value="1" min="1"
+                            max="100" id="quantity" />
+
+
+                        <div class="nc-plus"><svg class="nc-plus__plus" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-plus"></use>
+                            </svg></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="label-wrap">
+            <label for="message" class="label-wrap__name">Message</label>
+            <textarea class="label-wrap__input label-wrap__textarea" name="feedback" rows="5"
+                placeholder="Type your message here..." id="message"></textarea>
+        </div>
+        <div class="fieldset__button">
+
+            <button class="fieldset__button-reset">Reset</button>
+            <button class="fieldset__button-order" type="submit">Order Now</button>
+        </div>
+    </form>
+</div>
