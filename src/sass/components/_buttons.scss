@@ -33,7 +33,7 @@
 
     @include desktop {
         width: 107px;
-        height: 40px;
+        /*height: 40px;*/
     }
 }
 
@@ -54,6 +54,10 @@
 }
 
 .btn__bio-eco {
+    @mixin transition ($selector) {
+        transition: 250ms $selector cubic-bezier(.23, .63, .71, .51);
+    }
+
     @include tablet {
         position: relative;
         width: 18px;
@@ -86,3 +90,4 @@
         fill: #D41443;
     }
 }
+
