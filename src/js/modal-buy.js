@@ -2,9 +2,9 @@
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[modal-open]'),
-    closeModalBtn: document.querySelector('[modal-close]'),
-    modal: document.querySelector('[header-modal]'),
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-header-modal]'),
     body: document.querySelector('body'),
   };
 
@@ -18,7 +18,7 @@
 })();
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[modal-open-mobile]'),
+    openModalBtn: document.querySelector('[data-modal-open-mobile]'),
     closeModalBtn: document.querySelector('[modal-close-mobile]'),
     modal: document.querySelector('[header-modal]'),
     body: document.querySelector('body'),
