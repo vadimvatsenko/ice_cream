@@ -1,8 +1,12 @@
 .gallary {
   padding-top: 30px;
-  background-image: linear-gradient(to bottom, $mainBgColor 60px, $thirdTexColor 60px, $thirdTexColor 100%);
+  background-image: linear-gradient(
+    to bottom,
+    $mainBgColor 60px,
+    $thirdTexColor 60px,
+    $thirdTexColor 100%
+  );
 }
-
 
 .gallery img {
   height: 100%;
@@ -11,6 +15,7 @@
 .gallery {
   // background: #fff;
   max-width: 1200px;
+  width: 100%;
 }
 
 /* clearfix */
@@ -25,51 +30,76 @@
 .gallery-sizer,
 .gallery-item {
   //   width: 45px;
-  width: 15%;
+  width: 45px;
+  @include tablet() {
+    width: 105px;
+  }
+
+  @include desktop() {
+    width: 140px;
+  }
 }
 
 .gallery-item {
   //   height: 120px;
   margin-bottom: 2.5px;
   float: left;
-
+  margin-left: auto;
+  margin-right: auto;
   transition-duration: 250ms;
   transition-property: transform;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     z-index: 10;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+
+  // width: 45px;
+  max-width: 1000px;
+  // height: 45px;
+  max-height: 1000px;
 }
 
 .gallery-item--width2 {
   //   min-width: 45px;
-  //   width: 15%;
-  //   max-width: 100%;
+  // max-width: 100%;
+  width: 45px;
+  height: 45px;
+  @include tablet() {
+    width: 105px;
+    height: 105px;
+  }
+
+  @include desktop() {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .gallery-item--width3 {
   width: 90px;
-}
+  height: 90px;
 
-.gallery-item--height2 {
-  //   height: 45px;
-  //   height: auto;
-  width: 45px;
-}
+  @include tablet() {
+    width: 215px;
+    height: 215px;
+  }
 
-.gallery-item--height3 {
-  //   height: 90px;
-  //   height: auto;
-}
-
-.gallery-item--height4 {
-  //   height: 360px;
+  @include desktop() {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .gallery-item--solo {
   margin-bottom: 45px;
   margin-top: 45px;
+}
+
+.gallery__image {
+  // width: 100%;
+  // height: auto;
 }
 
 // .gallery-item--duet {
