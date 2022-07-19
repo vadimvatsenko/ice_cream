@@ -1,0 +1,338 @@
+.backdrop-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.2);
+    @include transition (opacity);
+    overflow-y: auto;
+    transition: all 250ms ease 0s;
+
+}
+
+.backdrop-header .fieldset {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+
+
+}
+
+.backdrop-header.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.backdrop-header.is-hidden .fieldset {
+    transform: translate(80%, -100%) scale(0.1) rotate(180deg)
+}
+
+
+.fieldset {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    min-width: 320px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $mainBgColor;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    opacity: 0;
+    transition: all 250ms ease 0s;
+
+    @include tablet {
+        width: 450px;
+    }
+
+
+}
+
+.fieldset__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    color: $mainTextColor;
+}
+
+.fieldset__close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: $secondBgColor;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @include transition (background-color);
+
+    &:hover,
+    &:focus {
+        background-color: $mainTextColor;
+    }
+}
+
+.fieldset__wrap {
+    margin-top: 30px;
+}
+
+.label-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.label-wrap__name,
+.product-wrap__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: $secondTextColor;
+    margin-bottom: 8px;
+}
+
+
+.label-wrap__input {
+    height: 40px;
+    border-radius: 5px;
+    color: $fifthTextColor;
+    background-color: $thirdTexColor;
+    font-family: DM Sans, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.76;
+    cursor: pointer;
+}
+
+
+
+.order-button {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: $mainTextColor;
+    color: white;
+    width: 100px;
+
+    border-radius: 22px;
+
+    @include transition (background-color);
+    @include transition (color);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        color: $mainTextColor;
+    }
+}
+
+.label-wrap__input {
+    border: 1px solid $fourthBgColor;
+}
+
+.label-wrap__input:focus-within {
+    outline: 2px solid $fourthBgColor;
+}
+
+.label-wrap__input:focus-within .label-wrap__input {
+    border: transparent;
+}
+
+.input-quantity {
+    height: 60px;
+}
+
+// radio
+.radio-wrap {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: $fifthTextColor;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $fourthBgColor;
+    border-radius: 100%;
+    background: #fff;
+}
+
+// radio
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $fifthBgColor;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="radio"]:checked+.label-wrap__name {
+    color: currentColor
+}
+
+
+
+.label-radio+.label-radio {
+    margin-top: 10px;
+}
+
+.product-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+
+}
+
+// :start
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.number {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+}
+
+.number input {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.number_controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.number_controls>div {
+
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: $secondBgColor;
+    fill: $whiteTextColor;
+    line-height: 15px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include transition (background-color);
+}
+
+.number_controls>div:hover {
+    background-color: $mainTextColor;
+}
+
+.label-wrap__textarea {
+    width: 100%;
+    height: auto;
+    resize: none;
+    padding: 10px;
+}
+
+.label-wrap__textarea::placeholder {
+    font-family: DM Sans, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.76;
+}
+
+.fieldset__button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.fieldset__button-order,
+.fieldset__button-reset {
+    padding: 15px 40px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: $thirdTexColor;
+    border-radius: 22px;
+    color: $mainTextColor;
+    @include transition (all);
+
+    &:hover,
+    &:focus {
+        background-color: $mainTextColor;
+        color: $thirdTexColor;
+    }
+}
