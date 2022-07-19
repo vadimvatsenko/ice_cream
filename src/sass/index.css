@@ -1313,6 +1313,28 @@ section--bg-white {
   margin-top: 45px;
 }
 
+.slider {
+  transition-duration: 500ms;
+  transform: translateX(0);
+  transition-duration: 500ms;
+}
+
+.slider-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+  transform: translateX(-100%);
+  transition-duration: 500ms;
+}
+
 .customer-reviews {
   background-color: #FFFFFF;
   padding-top: 0;
@@ -1402,6 +1424,10 @@ section--bg-white {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.reviews-carusel__swipe-item {
+  cursor: pointer;
 }
 
 .reviews-carusel__swipe-item:not(:first-child) {
