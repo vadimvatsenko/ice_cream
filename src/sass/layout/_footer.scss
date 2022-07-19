@@ -27,6 +27,8 @@
   background-color: $currentBgGolor;
   color: $thirdTexColor;
 
+  @include transition(all);
+
   &:hover,
   &:focus {
     background-color: $thirdTexColor;
@@ -37,6 +39,18 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.ftr__button--white {
+  background-color: $thirdTexColor;
+  color: $mainTextColor;
+
+  @include transition(background-color);
+}
+
+.ftr__button--white:hover,
+.ftr__button--white:focus {
+  background-color: $hoverLiteButton;
 }
 
 .ftr-button__icon {
@@ -151,7 +165,7 @@
   display: flex;
   justify-content: flex-end;
 
-  & .ftr__social__icon+.ftr__social__icon {
+  & .ftr__social__icon + .ftr__social__icon {
     padding-left: 30px;
   }
 
