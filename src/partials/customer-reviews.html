@@ -2,7 +2,7 @@
   <h2 class="visually-hidden">Reviews</h2>
   <h3 class="visually-hidden">Reviews from our clients</h3>
   <div class="container ">
-    <div class="slider" id="home-block">
+    <div class="slider" id="home-block" >
       <picture class="reviews-picture">
         <source
           srcset="
@@ -36,14 +36,14 @@
       <picture class="reviews-picture">
         <source
           srcset="
-            ./images/gallery/face-1.png    1x,
-            ./images/gallery/face-1-2x.png 2x
+            ./images/gallery/face-2.png    1x,
+            ./images/gallery/face-2-2x.png 2x
           "
           type="image/png"
         />
         <img
           class="reviews-img"
-          src="./images/gallery/face-1.png"
+          src="./images/gallery/face-2.png"
           alt="happy client"
           width="85"
         />
@@ -62,14 +62,14 @@
         <picture class="reviews-picture">
           <source
             srcset="
-              ./images/gallery/face-1.png    1x,
-              ./images/gallery/face-1-2x.png 2x
+              ./images/gallery/face-3.png    1x,
+              ./images/gallery/face-3-2x.png 2x
             "
             type="image/png"
           />
           <img
             class="reviews-img"
-            src="./images/gallery/face-1.png"
+            src="./images/gallery/face-3.png"
             alt="happy client"
             width="85"
           />
@@ -90,19 +90,19 @@
 
       <div class="reviews-carusel">
         <ul class="reviews-carusel__dots-list list">
-          <li class="reviews-carusel__dots-item"></li>
-          <li class="reviews-carusel__dots-item"></li>
-          <li class="reviews-carusel__dots-item"></li>
+          <li class="reviews-carusel__dots-item" ></li>
+          <li class="reviews-carusel__dots-item" ></li>
+          <li class="reviews-carusel__dots-item" ></li>
         </ul>
       </div>
       <ul class="reviews-carusel__swipe-list list">
-        <li class="reviews-carusel__swipe-item" id="home">
-          <svg class="reviews-carusel__icon" width="12" height="12">
+        <li class="" id="home"  onclick="funcHome()">
+          <svg class="reviews-carusel__icon home--selected" id="home-icon" width="12" height="12">
             <use href="./images/icons/icons.svg#icon-home"></use>
           </svg>
         </li>
-        <li class="reviews-carusel__swipe-item" id="dot-2"></li>
-        <li class="reviews-carusel__swipe-item" id="dot-3"></li>
+        <li class="reviews-carusel__swipe-item" id="dot-2"  onclick="funcDot_2()"></li>
+        <li class="reviews-carusel__swipe-item" id="dot-3" onclick="funcDot_3()"></li>
       </ul>
     </div>
   </div>
