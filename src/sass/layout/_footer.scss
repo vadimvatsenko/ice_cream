@@ -27,10 +27,16 @@
   background-color: $currentBgGolor;
   color: $thirdTexColor;
 
+  &--lite {
+    background-color: $thirdTexColor;
+    color: $mainTextColor;
+  }
+
   &:hover,
   &:focus {
     background-color: $thirdTexColor;
     color: $currentBgGolor;
+
   }
 
   &--submit {
