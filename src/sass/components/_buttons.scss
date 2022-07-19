@@ -1,10 +1,6 @@
 // Все кнопки
 .button {
     min-width: 62px;
-    // padding-left: 37px;
-    // padding-right: 37px;
-    // padding-top: 15px;
-    // padding-bottom: 15px;
     font-weight: 700;
     font-size: 16px;
     background-color: $thirdTexColor;
@@ -33,14 +29,14 @@
 
     @include desktop {
         width: 107px;
-        /*height: 40px;*/
+
     }
 }
 
 .button__arrow {
     margin-left: 12px;
     fill: currentColor;
-    // padding: 10px 12px;
+
 }
 
 .button-buy {
@@ -90,4 +86,3 @@
         fill: #D41443;
     }
 }
-
