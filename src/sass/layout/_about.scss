@@ -4,7 +4,7 @@
 
 .about-img-box {
   width: 100%;
-  justify-content: center;
+  margin-top: 32px;
 
   @include tablet {
     display: flex;
@@ -18,7 +18,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
 
     @include retinaBgImg {
       background-image: url(../images/about/bg-milk-2x.png);
@@ -128,9 +129,8 @@
   }
 
   @include desktop {
-    max-width: 463px;
-    margin-left: 92px;
-    margin-right: 34px;
+    margin-left: 100px;
+
   }
 }
 
