@@ -138,6 +138,7 @@
  
  position: relative;
  margin-top: 140px;
+ transition: 500ms transform cubic-bezier(.23, .63, .71, .51);
  @include tablet {
     margin-top: 160px;
     padding: 110px 32px 40px 32px;
@@ -149,10 +150,22 @@
  
 }
 
+// .products__item:hover {
+//   transform: rotateY(180deg);
+// }
+
+// .products__item:hover {
+//   transform: scale(1);
+// }
+
 .ice-cream {
     background-color: $secondBgColor;
 }
+
+
+
 .ice-cream::before {
+  
     background-image: url(../images/products/ice-cream-mob.png);
     background-size: cover;
     @include retinaBgImg {
@@ -173,8 +186,10 @@
     background-image: url(../images/products/ice-cream-2x.png);   
     }
   }
-
+  
 }
+
+
 
 .ice-coffe {
     background-color: $thirdBgColor;
@@ -230,10 +245,11 @@
   content: "";  
   width: 280px;
   height: 280px;
-
+  
   position: absolute;
   top:-140px;
   left:5px;
+
 }
 
   .products__item::before {
@@ -258,6 +274,8 @@
 }
   }
 
+  
+
 .products__button {
     width: 40px;
     height: 40px;
@@ -277,6 +295,10 @@
 .products__button:hover,
 .products__button:focus {
     background-color: $mainBgColor;
+}
+
+.products__button:hover .products-item {
+  transform: scale(1.15);
 }
 
 .button__icon {
@@ -309,7 +331,7 @@
   
     @include mobile {
       width: 100vw;
-      height: 20vh;
+      height: auto;
     }
   
     @media screen and (min-width: 480px) {
@@ -331,7 +353,7 @@
   
     @include mobile {
       width: 100vw;
-      height: 20vh;
+      height: auto;
     }
   
     @media screen and (min-width: 480px) {
@@ -354,7 +376,7 @@
   
     @include mobile {
       width: 100vw;
-      height: 20vh;
+      height: auto;
     }
   
     @media screen and (min-width: 480px) {
