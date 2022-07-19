@@ -1,4 +1,29 @@
 // .reviews-picture {}
+
+.slider {
+  // opacity: 1;
+  transition-duration: 500ms;
+  // transition-property: opacity;
+  transform: translateX(0);
+  transition-duration: 500ms;
+}
+
+.slider-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+
+  transform: translateX(-100%);
+  transition-duration: 500ms;
+}
+
 .customer-reviews {
   background-color: $thirdTexColor;
   padding-top: 0;
@@ -102,6 +127,10 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.reviews-carusel__swipe-item {
+  cursor: pointer;
 }
 
 .reviews-carusel__swipe-item:not(:first-child) {

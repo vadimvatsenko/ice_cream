@@ -1,43 +1,108 @@
 <section class="section customer-reviews">
   <h2 class="visually-hidden">Reviews</h2>
   <h3 class="visually-hidden">Reviews from our clients</h3>
-  <div class="container">
-    <picture class="reviews-picture">
-      <source srcset="
-          ./images/gallery/face-1.png    1x,
-          ./images/gallery/face-1-2x.png 2x
-        " type="image/png" />
-      <img class="reviews-img" src="./images/gallery/face-1.png" alt="happy client" width="85" />
-    </picture>
+  <div class="container ">
+    <div class="slider" id="home-block">
+      <picture class="reviews-picture">
+        <source
+          srcset="
+            ./images/gallery/face-1.png    1x,
+            ./images/gallery/face-1-2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="reviews-img"
+          src="./images/gallery/face-1.png"
+          alt="happy client"
+          width="85"
+        />
+      </picture>
 
-    <div class="review">
-      <svg class="review__icon" width="54" height="40">
-        <use href="./images/icons/icons.svg#icon-quote"></use>
-      </svg>
-      <p class="review__text">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
-        in nibh vel risus.
-      </p>
+      <div class="review">
+        <svg class="review__icon" width="54" height="40">
+          <use href="./images/icons/icons.svg#icon-quote"></use>
+        </svg>
+        <p class="review__text">
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+          ipsum primis in nibh vel risus.
+        </p>
+      </div>
+      <p class="reviews-carusel__name-client">Emily, Los Angeles</p>
     </div>
 
-    <div class="reviews-carusel">
-      <ul class="reviews-carusel__dots-list list">
-        <li class="reviews-carusel__dots-item"></li>
-        <li class="reviews-carusel__dots-item"></li>
-        <li class="reviews-carusel__dots-item"></li>
-      </ul>
+    <div class="slider slider-hidden" id="dot-2-block">
+      <picture class="reviews-picture">
+        <source
+          srcset="
+            ./images/gallery/face-1.png    1x,
+            ./images/gallery/face-1-2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="reviews-img"
+          src="./images/gallery/face-1.png"
+          alt="happy client"
+          width="85"
+        />
+      </picture>
 
-      <p class="reviews-carusel__name-client">Emily, Los Angeles</p>
+      <div class="review">
+        <svg class="review__icon" width="54" height="40">
+          <use href="./images/icons/icons.svg#icon-quote"></use>
+        </svg>
+        <p class="review__text">KLASNOE ICE-CREAM! I like it!</p>
+      </div>
+        <p class="reviews-carusel__name-client">Eugene, Kiev</p>
 
+    </div>
+      <div class="slider slider-hidden" id="dot-3-block">
+        <picture class="reviews-picture">
+          <source
+            srcset="
+              ./images/gallery/face-1.png    1x,
+              ./images/gallery/face-1-2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="reviews-img"
+            src="./images/gallery/face-1.png"
+            alt="happy client"
+            width="85"
+          />
+        </picture>
+
+        <div class="review">
+          <svg class="review__icon" width="54" height="40">
+            <use href="./images/icons/icons.svg#icon-quote"></use>
+          </svg>
+          <p class="review__text">
+            Yeah. Realy cool ice-cream. I have never been taste like this. I
+            eating ice-cream like Patric star.
+          </p>
+        </div>
+
+        <p class="reviews-carusel__name-client">Dmitrii, Kiev</p>
+      </div>
+
+      <div class="reviews-carusel">
+        <ul class="reviews-carusel__dots-list list">
+          <li class="reviews-carusel__dots-item"></li>
+          <li class="reviews-carusel__dots-item"></li>
+          <li class="reviews-carusel__dots-item"></li>
+        </ul>
+      </div>
       <ul class="reviews-carusel__swipe-list list">
-        <li class="reviews-carusel__swipe-item">
+        <li class="reviews-carusel__swipe-item" id="home">
           <svg class="reviews-carusel__icon" width="12" height="12">
             <use href="./images/icons/icons.svg#icon-home"></use>
           </svg>
         </li>
-        <li class="reviews-carusel__swipe-item"></li>
-        <li class="reviews-carusel__swipe-item"></li>
+        <li class="reviews-carusel__swipe-item" id="dot-2"></li>
+        <li class="reviews-carusel__swipe-item" id="dot-3"></li>
       </ul>
     </div>
   </div>
