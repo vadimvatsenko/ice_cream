@@ -4,7 +4,7 @@
   const refs = {
     openModalBtn: document.querySelector('[data-modal-header-down-open]'),
     closeModalBtn: document.querySelector('[data-modal-header-down-close]'),
-    modal: document.querySelector('[data-hodal-header-down]'),
+    modal: document.querySelector('[data-modal-header-down]'),
     body: document.querySelector('body'),
   };
 

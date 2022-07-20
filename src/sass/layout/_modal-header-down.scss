@@ -28,7 +28,7 @@
 }
 
 .backdrop-header-down.is-hidden .round-mobal {
-    transform: translate(80%, -100%) scale(0.1) rotate(180deg)
+    transform: translate(-50%, -20%) scale(0.1) rotate(180deg)
 }
 
 
@@ -39,10 +39,14 @@
     width: 400px;
     height: 400px;
     background-color: $mainTextColor;
+    background-image: url(../images/icons/icon-ice-cream.svg);
+    background-position: center;
+    background-size: contain;
     border-radius: 50%;
-    padding: 20px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    //     0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     overflow: visible;
     opacity: 0;
@@ -53,4 +57,34 @@
     right: 35px;
     top: 35px;
     z-index: 100;
+}
+
+.round-modal__title,
+.round-modal__subtitle,
+.round-mobal__phone {
+    color: #fff;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    font-family: Titan One;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+
+.round-modal__subtitle {
+    margin-top: 30px;
+}
+
+.round-mobal__phone {
+    margin-top: 50px;
+    font-size: 25px;
+
+    @include transition (color);
+
+    &:hover,
+    &:focus {
+        color: $secondBgColor;
+    }
+
 }

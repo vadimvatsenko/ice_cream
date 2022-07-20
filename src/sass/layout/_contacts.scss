@@ -1,29 +1,23 @@
 .contacts {
   padding: 0;
-  background-image: linear-gradient(
-    to bottom,
-    $thirdTexColor 24%,
-    $mainBgColor 24%
-  );
+  background-image: linear-gradient(to bottom,
+      $thirdTexColor 20%,
+      $mainBgColor 20%);
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-      $thirdTexColor 55%,
-      $mainBgColor 55%
-    );
+    background-image: linear-gradient(to bottom,
+        $thirdTexColor 55%,
+        $mainBgColor 55%);
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-      $thirdTexColor 19%,
-      $mainBgColor 19%
-    );
+    background-image: linear-gradient(to bottom,
+        $thirdTexColor 19%,
+        $mainBgColor 19%);
   }
 }
 
-.contacts__item + .contacts__item {
+.contacts__item+.contacts__item {
   margin-top: 25px;
 
   @media screen and (min-width: 768px) {
@@ -42,28 +36,25 @@
 
 .contacts__item {
 
-    padding: 40px 32px;
-    background-color: $thirdTexColor;
-    max-width: 280px;
-    // height: 412px;
-    height: auto;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 40px 32px;
+  background-color: $thirdTexColor;
+  max-width: 280px;
+  height: auto;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-        max-width: 224px;
-        // height: 528px;
-        margin-right: 0;
-        margin-left: 0;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 224px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 
-    @media screen and (min-width: 1200px) {
-        max-width: 368px;
-        // height: 538px;
-        padding: 40px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 368px;
+    padding: 40px;
+  }
 
 }
 
@@ -164,7 +155,7 @@
   }
 }
 
-.contacts__item-meta + .contacts__item-meta {
+.contacts__item-meta+.contacts__item-meta {
   margin-top: 8px;
 
   @media screen and (min-width: 768px) {
@@ -263,7 +254,6 @@
   top: 50%;
   left: 50%;
   padding: 40px;
-  // transform: translate(-50%, -50%) scale(0);
   border-radius: 22px;
   background: $secondBgColor;
   width: calc(100vw - 30px);
@@ -281,13 +271,9 @@
     height: calc(100vh - 100px);
   }
 
-  // transition: 250ms all;
 }
 
-// .map.active {
-//     transform: translate(-50%, -50%) scale(1);
-//     transition: 250ms all;
-// }
+
 
 .close-map {
   position: absolute;
@@ -311,26 +297,6 @@
   border-radius: 7px;
 }
 
-//franchise
-// .popup__bg {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100vh;
-//     background: rgba(0, 0, 0, 0.5);
-//     opacity: 0;
-//     pointer-events: none;
-//     transition: 0.5s all;
-// }
-
-// .popup__bg.active {
-//     opacity: 1;
-//     pointer-events: all;
-//     transition: 0.5s all;
-// }
-
-// ++
 .popup__bg {
   position: fixed;
   top: 0;
@@ -384,28 +350,6 @@
   transition: 0.5s all;
 }
 
-// ===
-// .popup.active {
-//     transform: translate(-50%, -50%) scale(1);
-//     transition: 0.5s all;
-// }
-// ===
-
-// .close-popup {
-//     position: absolute;
-//     top: 10px;
-//     right: 10px;
-//     width: 25px;
-//     height: 25px;
-//     border-radius: 50%;
-//     background-color: $currentBgGolor;
-//     transition: background-color linear 250ms;
-
-//     &:hover,
-//     &:focus {
-//         background-color: $mainBgColor;
-//     }
-// }
 
 .popup label {
   width: 100%;
@@ -438,7 +382,7 @@
   border-bottom: 1px solid $currentBgGolor;
 }
 
-.popup input:focus + .label__text {
+.popup input:focus+.label__text {
   color: $currentBgGolor;
 }
 
@@ -457,7 +401,7 @@
   border-bottom: 1px solid $currentBgGolor;
 }
 
-.popup textarea:focus + .label__text {
+.popup textarea:focus+.label__text {
   color: $currentBgGolor;
 }
 
@@ -474,24 +418,3 @@
     margin-top: 60px;
   }
 }
-
-// .popup button {
-//   width: 100%;
-//   height: 45px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #fff;
-//   font-size: 18px;
-//   border: 2px solid #2982ff;
-//   background: #2982ff;
-//   cursor: pointer;
-//   text-transform: uppercase;
-//   transition: 0.5s all;
-// }
-
-// .popup button:hover {
-//   background: #fff;
-//   color: #2982ff;
-//   transition: 0.5s all;
-// }
