@@ -1,9 +1,10 @@
 .advantages {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 
   @include tablet {
     padding-top: 60px;
+    padding-bottom: 64px;
   }
 
   @include desktop {
@@ -21,7 +22,49 @@
     display: flex;
   }
 }
-
+.advant__item:before {
+  display: block;
+  content: '';
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.advant__item:nth-child(1):before {
+  background-image: url(../images/advantages/icon-milk-mob.png.png);
+  background-image: url(../images/advantages/icon-milk-mob-2x.png.png);
+  @include tablet {
+    background-image: url(../images/advantages/icon-milk-tab.png.png);
+    background-image: url(../images/advantages/icon-milk-tab-2x.png.png);
+    @include desktop {
+      background-image: url(../images/advantages/icon-milk.png.png);
+      background-image: url(../images/advantages/icon-milk-2x.png.png);
+    }
+  }
+}
+.advant__item:nth-child(2):before {
+  background-image: url(../images/advantages/icon-cocktail-mob.png.png);
+  background-image: url(../images/advantages/icon-cocktail-mob-2x.png.png);
+  @include tablet {
+    background-image: url(../images/advantages/icon-cocktail-tab.png.png);
+    background-image: url(../images/advantages/icon-cocktail-tab-2x.png.png);
+    @include desktop {
+      background-image: url(../images/advantages/icon-cocktail.png.png);
+      background-image: url(../images/advantages/icon-cocktail-2x.png.png);
+    }
+  }
+}
+.advant__item:nth-child(3):before {
+  background-image: url(../images/advantages/icon-heart-mob.png.png);
+  background-image: url(../images/advantages/icon-heart-mob-2x.png.png);
+  @include tablet {
+    background-image: url(../images/advantages/icon-heart-tab.png.png);
+    background-image: url(../images/advantages/icon-heart-tab-2x.png.png);
+    @include desktop {
+      background-image: url(../images/advantages/icon-heart.png.png);
+      background-image: url(../images/advantages/icon-heart-2x.png.png);
+    }
+  }
+}
 .advant__item {
   margin-bottom: 32px;
 
@@ -51,7 +94,6 @@
 
 .advant__namber {
   font-family: 'Titan One', sans-serif;
-  text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -81,7 +123,6 @@
 
 .advant__descr {
   font-family: 'DM Sans', sans-serif;
-  text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -91,6 +132,7 @@
   width: 230px;
 
   @include tablet {
+    width: 180px;
     font-size: 14px;
     letter-spacing: 0;
   }

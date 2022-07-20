@@ -9,10 +9,17 @@
 }
 
 .ftr-box {
-  @media screen and (min-width: 768px) {
+  padding-bottom: 40px;
+
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+  }
+
+  @include desktop {
+    padding-bottom: 60px;
   }
 }
 
@@ -26,16 +33,16 @@
   padding: 0 17px;
   background-color: $currentBgGolor;
   color: $thirdTexColor;
+  fill: currentColor;
+  @include transition(all);
 
-  &--lite {
-    background-color: $thirdTexColor;
-    color: $mainTextColor;
-  }
+
 
   &:hover,
   &:focus {
-    background-color: $thirdTexColor;
+    background-color: $hoverLiteButton;
     color: $currentBgGolor;
+
 
   }
 
@@ -43,6 +50,19 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.ftr__button--lite {
+  background-color: $thirdTexColor;
+  color: $mainTextColor;
+
+  @include transition(background-color);
+}
+
+.ftr__button--lite:hover,
+.ftr__button--lite:focus {
+  background-color: $hoverLiteButton;
+  fill: currentColor;
 }
 
 .ftr-button__icon {
@@ -55,13 +75,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 350px;
+    width: 340px;
     display: flex;
     flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 500px;
+    width: 474px;
   }
 }
 
@@ -77,22 +97,21 @@
   color: $mainTextColor;
 
   @media screen and (min-width: 320px) {
-    padding-top: 16px;
+    margin-top: 16px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 55px;
-    padding-bottom: 40px;
-    padding-top: 12px;
+    margin-top: 12px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 58px;
     line-height: 66px;
     letter-spacing: 0.06em;
-    padding-bottom: 60px;
-    padding-top: 16px;
+
+    margin-top: 16px;
   }
 }
 
@@ -124,7 +143,10 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 186%;
-  padding-bottom: 40px;
+
+  @include only_mobile {
+    margin-top: 40px;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -158,11 +180,22 @@
   justify-content: flex-end;
 
   & .ftr__social__icon+.ftr__social__icon {
-    padding-left: 30px;
+    margin-left: 30px;
   }
 
   @media screen and (min-width: 320px) {
-    padding: 40px 0;
+    margin: 40px 0;
+  }
+
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  @media desktop {
+    margin-top: 0;
+    margin-bottom: 40px;
+
   }
 }
 
@@ -189,12 +222,23 @@
 }
 
 .ftr__copyright__holder {
+  padding-top: 7px;
+  padding-bottom: 4px;
   width: 100%;
   border-top: 1px solid #e1e1e1;
+
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @include desktop {
+    padding-top: 16px;
+    padding-bottom: 1px;
+  }
 }
 
 .ftr__copyright__holder--title {
-  padding-top: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
@@ -204,7 +248,7 @@
   @media screen and (min-width: 320px) {
     margin: 0 auto;
     width: 150px;
-    padding-bottom: 3px;
+
   }
 
   @media screen and (min-width: 768px) {

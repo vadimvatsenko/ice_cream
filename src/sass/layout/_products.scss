@@ -1,441 +1,489 @@
 .products {
-    background-color: $thirdTexColor;
-   
+  background-color: $thirdTexColor;
+
 }
 
 .products__lable-text {
-    font-family: Titan One;
-   font-weight: 400;
-   font-size: 18px;
-   line-height: calc(21/18);
-   color:$secondTextColor ;
-   text-transform: uppercase;
-   text-align: center;
-   margin-bottom: 15px;
-   @include tablet {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21/18);
+  color: $secondTextColor ;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+
+  @include tablet {
     font-size: 26px;
-   line-height: calc(30/26);
-   }
-   @include desktop {
+    line-height: calc(30/26);
+  }
+
+  @include desktop {
     font-size: 30px;
     line-height: calc(34/30);
-   }
+  }
 }
 
 .products__title--main {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: calc(39/34);
-    letter-spacing: 0.04em;
-    color:$mainTextColor;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 8px;
-    @include tablet {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(39/34);
+  letter-spacing: 0.04em;
+  color: $mainTextColor;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+
+  @include tablet {
     font-size: 48px;
     line-height: calc(55/48);
     margin-bottom: 20px;
-}
-    @include desktop {
+  }
+
+  @include desktop {
     font-size: 58px;
     line-height: calc(66/58);
-    
-    }
+
+  }
 
 }
 
 .products__title--second {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(23/20);
-    color: $thirdTexColor ;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 32px;
-    @include desktop {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23/20);
+  color: $thirdTexColor ;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @include desktop {
     font-size: 30px;
     line-height: calc(34/30);
-        }
-    
-    
+  }
+
+
 }
 
 .products__title--second::after {
-    content:"";
-    background-image: url(../images/products/eclips.png);
-    width: 26px;
-    height: 6px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 32px;}
+  content: "";
+  background-image: url(../images/products/eclips.png);
+  width: 26px;
+  height: 6px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+}
 
-  
+
 
 .products__text {
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(21/14);
-    letter-spacing: 0.04em;
-    color: $thirdTexColor ;
-    text-align: center;
-    margin-bottom: 32px;
-    @include tablet {
-    line-height: calc(25/14);    
-    }
-    @include desktop {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21/14);
+  letter-spacing: 0.04em;
+  color: $thirdTexColor ;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @include tablet {
+    line-height: calc(25/14);
+  }
+
+  @include desktop {
     font-size: 16px;
     line-height: calc(28/16);
-    
-            }
 
-    
+  }
+
+
 }
 
 .products__list {
-    display: flex;  
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    
-    
-    @include tablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+  @include tablet {
     flex-direction: row;
     justify-content: center;
-     
-    gap: 16px;   
-    }
-    @include desktop {
+
+    gap: 16px;
+  }
+
+  @include desktop {
     gap: 32px;
-    }
+  }
 }
+
 .products__item {
-    @include mobile {
+  @include mobile {
     width: 280px;
-    height: 489px;}
+    height: 489px;
+  }
 
-    @include tablet {
+  @include tablet {
     width: calc((100% - 32px) / 3);
-        
+
     height: 473px;
-                 }
-    @include desktop {
-        width: calc((100% - 64px) / 3);
-        
-        height: 535px;
-                 }
+  }
+
+  @include desktop {
+    width: calc((100% - 64px) / 3);
+
+    height: 535px;
+  }
 
 }
 
 .products__item {
- 
- border-radius: 24px;
- padding: 160px 39px 40px 41px;
- 
- position: relative;
- margin-top: 140px;
- @include tablet {
+
+  border-radius: 24px;
+  padding: 160px 39px 40px 41px;
+  height: auto;
+
+  position: relative;
+  margin-top: 140px;
+  transition: 500ms transform cubic-bezier(.23, .63, .71, .51);
+
+  @include tablet {
     margin-top: 160px;
     padding: 110px 32px 40px 32px;
- }
- @include desktop {
+  }
+
+  @include desktop {
     margin-top: 280px;
     padding: 165px 62px 60px 61px;
- }
- 
+  }
+
 }
+
+// .products__item:hover {
+//   transform: rotateY(180deg);
+// }
+
+// .products__item:hover {
+//   transform: scale(1);
+// }
 
 .ice-cream {
-    background-color: $secondBgColor;
+  background-color: $secondBgColor;
 }
+
+
+
 .ice-cream::before {
-    background-image: url(../images/products/ice-cream-mob.png);
-    background-size: cover;
-    @include retinaBgImg {
+
+  background-image: url(../images/products/ice-cream-mob.png);
+  background-size: cover;
+
+  @include retinaBgImg {
     background-image: url(../images/products/ice-cream-mob-2x.png);
-    }
+  }
 
-    @include tablet {
-    background-image: url(../images/products/ice-cream-tab.png); 
-    @include retinaBgImg {
-    background-image: url(../images/products/ice-cream-tab-2x.png);
-        } 
-    }
+  @include tablet {
+    background-image: url(../images/products/ice-cream-tab.png);
 
-    @include desktop {
-    background-image: url(../images/products/ice-cream.png); 
-    
     @include retinaBgImg {
-    background-image: url(../images/products/ice-cream-2x.png);   
+      background-image: url(../images/products/ice-cream-tab-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/products/ice-cream.png);
+
+    @include retinaBgImg {
+      background-image: url(../images/products/ice-cream-2x.png);
     }
   }
 
 }
 
-.ice-coffe {
-    background-color: $thirdBgColor;
-}
-.ice-coffe::before {
-    background-image: url(../images/products/ice-coffee-mob.png);
-    background-size: cover;
-    @include retinaBgImg {
-    background-image: url(../images/products/ice-coffee-mob-2x.png);
-        }
 
-    @include tablet {
-    background-image: url(../images/products/ice-coffee-tab.png); 
+
+.ice-coffe {
+  background-color: $thirdBgColor;
+}
+
+.ice-coffe::before {
+  background-image: url(../images/products/ice-coffee-mob.png);
+  background-size: cover;
+
+  @include retinaBgImg {
+    background-image: url(../images/products/ice-coffee-mob-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../images/products/ice-coffee-tab.png);
+
     @include retinaBgImg {
-    background-image: url(../images/products/ice-coffee-tab-2x.png);
-                } 
-            }
-        
-    @include desktop {
-    background-image: url(../images/products/ice-coffee.png); 
+      background-image: url(../images/products/ice-coffee-tab-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/products/ice-coffee.png);
+
     @include retinaBgImg {
-    background-image: url(../images/products/ice-coffee-2x.png);   
-            }
-          }
-} 
+      background-image: url(../images/products/ice-coffee-2x.png);
+    }
+  }
+}
 
 .milkshakes {
-    background-color: $fourthBgColor;
+  background-color: $fourthBgColor;
 }
-.milkshakes::before {
-    background-image: url(../images/products/milkshake-mob.png);
-    background-size: cover;
-    @include retinaBgImg {
-    background-image: url(../images/products/milkshake-mob-2x.png);
-            }
 
-    @include tablet {
-    background-image: url(../images/products/milkshake-tab.png); 
+.milkshakes::before {
+  background-image: url(../images/products/milkshake-mob.png);
+  background-size: cover;
+
+  @include retinaBgImg {
+    background-image: url(../images/products/milkshake-mob-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../images/products/milkshake-tab.png);
+
     @include retinaBgImg {
-    background-image: url(../images/products/milkshake-tab-2x.png);
-                            } 
-                        }
-                    
-    @include desktop {
-    background-image: url(../images/products/milkshake.png); 
+      background-image: url(../images/products/milkshake-tab-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/products/milkshake.png);
+
     @include retinaBgImg {
-    background-image: url(../images/products/milkshake-2x.png);   
-                        }
-                      }
-} 
+      background-image: url(../images/products/milkshake-2x.png);
+    }
+  }
+}
 
 .products__item::before {
-  content: "";  
+  content: "";
   width: 280px;
   height: 280px;
 
   position: absolute;
-  top:-140px;
-  left:5px;
+  top: -140px;
+  left: 5px;
+
 }
 
-  .products__item::before {
-    @include tablet {
+.products__item::before {
+  @include tablet {
     content: "";
     position: absolute;
     width: 224px;
     height: 224px;
-    top:-140px;
-    left:5px;
-}
+    top: -140px;
+    left: 5px;
   }
+}
 
-  .products__item::before {
-    @include desktop {
+.products__item::before {
+  @include desktop {
     content: "";
     position: absolute;
     width: 368px;
     height: 394px;
-    top:-270px;
-    left:5px;
-}
+    top: -270px;
+    left: 5px;
   }
+}
+
+
 
 .products__button {
-    width: 40px;
-    height: 40px;
-    background-color: $thirdTexColor;
-    border-radius: 50%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0ms;
-   }
+  width: 40px;
+  height: 40px;
+  background-color: $thirdTexColor;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
 
 .products__button:hover,
 .products__button:focus {
-    background-color: $mainBgColor;
+  background-color: $mainBgColor;
+}
+
+.products__button:hover .products-item {
+  transform: scale(1.15);
 }
 
 .button__icon {
-    fill: $mainTextColor;
-    
+  fill: $mainTextColor;
+
 }
 
 .products__backdrop {
-    z-index: 10;
-    position: fixed;
-    top: 0;
-    left: 0;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.modal--first {
+  background-color: $secondTextColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  transition: transform 300ms;
+  z-index: 20;
+
+  @include mobile {
     width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 300ms, visibility 300ms;
-  }
-  
-  .modal--first {
-    background-color: $secondTextColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scaleY(1) rotate(0);
-    transition: transform 300ms;
-    z-index: 20;
-  
-    @include mobile {
-      width: 100vw;
-      height: 20vh;
-    }
-  
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      height: auto;
-    }
-  }
-  .modal--second {
-    background-color: $thirdBgColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scaleY(1) rotate(0);
-    transition: transform 300ms;
-    z-index: 20;
-  
-    @include mobile {
-      width: 100vw;
-      height: 20vh;
-    }
-  
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      height: auto;
-    }
+    height: auto;
   }
 
-  .modal--thirth {
-    background-color: $fourthBgColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scaleY(1) rotate(0);
-    transition: transform 300ms;
-    z-index: 20;
-  
-    @include mobile {
-      width: 100vw;
-      height: 20vh;
-    }
-  
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      height: auto;
-    }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: auto;
+  }
+}
+
+.modal--second {
+  background-color: $thirdBgColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  transition: transform 300ms;
+  z-index: 20;
+
+  @include mobile {
+    width: 100vw;
+    height: auto;
   }
 
-  .products__backdrop.is-hidden .modal--first {
-  
-    transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: auto;
   }
-  .products__backdrop.is-hidden .modal--second {
-  
-    transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
-  }
-  .products__backdrop.is-hidden .modal--thirth {
-  
-    transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
-  }
-  
-  .modal-close-button {
-    border: 1px solid transparent;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ffb8ca;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    cursor: pointer;
+}
+
+.modal--thirth {
+  background-color: $fourthBgColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  transition: transform 300ms;
+  z-index: 20;
+
+  @include mobile {
+    width: 100vw;
+    height: auto;
   }
 
-  
-  
-  .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: auto;
   }
-  
-  .products__modal-form {
-   padding: 40px 40px 40px 40px;
-  }
-  
-  .products__modal-title {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(23/20);
-    color: $mainBgColor;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-bottom: 12px;
-  }
-  
-  .products__modal-field {
-    display: block;
-    margin: 0;
-  }
-  
-  .products__modal-label {
-    display: block;
-    font-size: 16px;
-    font-weight: 400px;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-    color: $fifthTextColor;
-    padding-bottom: 4px;
-    padding-top: 10px;
-  }
-  
-  .icon-close-button {
-    fill: $mainTextColor;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+
+.products__backdrop.is-hidden .modal--first {
+
+  transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
+}
+
+.products__backdrop.is-hidden .modal--second {
+
+  transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
+}
+
+.products__backdrop.is-hidden .modal--thirth {
+
+  transform: translate(-50%, -50%) scaleY(0) rotate(180deg);
+}
+
+.modal-close-button {
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffb8ca;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
 
 
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.products__modal-form {
+  padding: 40px 40px 40px 40px;
+}
+
+.products__modal-title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23/20);
+  color: $mainBgColor;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+.products__modal-field {
+  display: block;
+  margin: 0;
+}
+
+.products__modal-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: $fifthTextColor;
+  padding-bottom: 4px;
+  padding-top: 10px;
+}
+
+.icon-close-button {
+  fill: $mainTextColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
