@@ -49,6 +49,10 @@
     opacity: 0;
     transition: all 250ms ease 0s;
 
+    @include tablet {
+        width: 450px;
+    }
+
 
 }
 

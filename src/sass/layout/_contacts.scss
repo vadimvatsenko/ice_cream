@@ -41,27 +41,30 @@
 }
 
 .contacts__item {
-  padding: 40px 32px;
-  background-color: $thirdTexColor;
-  max-width: 280px;
-  height: 412px;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-  margin-left: auto;
-  margin-right: auto;
 
-  @media screen and (min-width: 768px) {
-    max-width: 224px;
-    height: 528px;
-    margin-right: 0;
-    margin-left: 0;
-  }
+    padding: 40px 32px;
+    background-color: $thirdTexColor;
+    max-width: 280px;
+    // height: 412px;
+    height: auto;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 368px;
-    height: 538px;
-    padding: 40px;
-  }
+    @media screen and (min-width: 768px) {
+        max-width: 224px;
+        // height: 528px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 368px;
+        // height: 538px;
+        padding: 40px;
+    }
+
 }
 
 .contacts__card-name {

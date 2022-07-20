@@ -4,14 +4,13 @@
 
 .about-img-box {
   width: 100%;
-  justify-content: center;
+  margin-top: 32px;
 
   @include tablet {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 40px;
+    margin-top: 40px;
   }
 
   @include desktop {
@@ -19,7 +18,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
 
     @include retinaBgImg {
       background-image: url(../images/about/bg-milk-2x.png);
@@ -97,11 +97,6 @@
   color: #000000;
   width: 220px;
 
-  @media screen and (min-width: 480px) {
-    width: 320px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 
   @include tablet {
     font-size: 14px;
@@ -134,9 +129,8 @@
   }
 
   @include desktop {
-    max-width: 463px;
-    margin-left: 92px;
-    margin-right: 34px;
+    margin-left: 100px;
+
   }
 }
 
@@ -153,11 +147,11 @@
   width: 220px;
   height: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 320px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 320px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 
   @include tablet {
     background-image: none;
