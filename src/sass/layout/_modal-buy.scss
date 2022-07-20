@@ -62,6 +62,10 @@
     font-weight: 400;
     font-size: 34px;
     color: $mainTextColor;
+
+    @include mobile {
+        font-size: 30px;
+    }
 }
 
 .fieldset__close-btn {
