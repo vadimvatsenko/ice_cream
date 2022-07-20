@@ -2026,7 +2026,7 @@ input[type=number] {
   }
 }
 
-.gallary {
+.section .gallary {
   padding-top: 30px;
   background-image: linear-gradient(to bottom, #FFF5F6 60px, #FFFFFF 60px, #FFFFFF 100%);
 }
@@ -2036,8 +2036,19 @@ input[type=number] {
 }
 
 .gallery {
-  max-width: 1200px;
   width: 100%;
+  max-width: 355px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    max-width: 1013px;
+  }
 }
 
 /* clearfix */
@@ -2050,30 +2061,25 @@ input[type=number] {
 /* ---- gallery-item ---- */
 .gallery-sizer,
 .gallery-item {
-  width: 45px;
+  width: 44px;
 }
 @media screen and (min-width: 768px) {
   .gallery-sizer,
 .gallery-item {
-    width: 105px;
+    width: 108px;
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery-sizer,
 .gallery-item {
-    width: 140px;
+    width: 142px;
   }
 }
 
 .gallery-item {
   margin-bottom: 2.5px;
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
   transition-duration: 250ms;
   transition-property: transform;
-  max-width: 1000px;
-  max-height: 1000px;
 }
 .gallery-item:hover {
   transform: scale(1.2);
@@ -2082,8 +2088,8 @@ input[type=number] {
 }
 
 .gallery-item--width2 {
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
 }
 @media screen and (min-width: 768px) {
   .gallery-item--width2 {
@@ -2093,8 +2099,8 @@ input[type=number] {
 }
 @media screen and (min-width: 1200px) {
   .gallery-item--width2 {
-    width: 140px;
-    height: 140px;
+    width: 138px;
+    height: 138px;
   }
 }
 
@@ -2110,14 +2116,68 @@ input[type=number] {
 }
 @media screen and (min-width: 1200px) {
   .gallery-item--width3 {
-    width: 285px;
-    height: 285px;
+    width: 284px;
+    height: 284px;
   }
 }
 
 .gallery-item--solo {
-  margin-bottom: 45px;
-  margin-top: 45px;
+  margin-bottom: 44px;
+  margin-top: 44px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item--solo {
+    margin-bottom: 105px;
+    margin-top: 105px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item--solo {
+    margin-bottom: 138px;
+    margin-top: 138px;
+  }
+}
+
+.gallery-item--duo {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item--duo {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item--duo {
+    margin-top: 65px;
+  }
+}
+
+.gallery-item--duo-half {
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item--duo-half {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item--duo-half {
+    margin-top: 30px;
+  }
+}
+
+.gallery-item--left {
+  margin-right: 44px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item--left {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item--left {
+    margin-right: 0;
+  }
 }
 
 .slider {
@@ -2191,19 +2251,11 @@ input[type=number] {
   background-position-y: 1px;
 }
 
-.review::after {
-  content: "";
-  border-bottom: 5px solid black;
-  width: 30px;
-  height: 30px;
-}
-
-.review__icon {
-  z-index: 0;
-  top: 30px;
-  left: 30px;
+.review::before {
+  content: url("../images/icons/quote.svg");
   position: absolute;
-  fill: #e1e1e1;
+  top: 20px;
+  left: 20px;
 }
 
 .reviews-carusel {
@@ -2251,6 +2303,10 @@ input[type=number] {
   height: 12px;
   border-radius: 50%;
   background-color: #d9d9d9;
+}
+
+.reviews-carusel__swipe-home {
+  cursor: pointer;
 }
 
 .reviews-carusel__icon {
