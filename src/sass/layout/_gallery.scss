@@ -1,4 +1,4 @@
-.gallary {
+.section .gallary {
   padding-top: 30px;
   background-image: linear-gradient(
     to bottom,
@@ -14,8 +14,18 @@
 
 .gallery {
   // background: #fff;
-  max-width: 1200px;
+  // max-width: 1200px;
   width: 100%;
+  max-width: 355px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1013px;
+  }
 }
 
 /* clearfix */
@@ -30,22 +40,22 @@
 .gallery-sizer,
 .gallery-item {
   //   width: 45px;
-  width: 45px;
+  width: 44px;
   @include tablet() {
-    width: 105px;
+    width: 108px;
   }
 
   @include desktop() {
-    width: 140px;
+    width: 142px;
   }
 }
 
 .gallery-item {
   //   height: 120px;
   margin-bottom: 2.5px;
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
+  // float: left;
+  // margin-left: auto;
+  // margin-right: auto;
   transition-duration: 250ms;
   transition-property: transform;
 
@@ -56,24 +66,24 @@
   }
 
   // width: 45px;
-  max-width: 1000px;
+  // max-width: 1000px;
   // height: 45px;
-  max-height: 1000px;
+  // max-height: 1000px;
 }
 
 .gallery-item--width2 {
   //   min-width: 45px;
   // max-width: 100%;
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
   @include tablet() {
     width: 105px;
     height: 105px;
   }
 
   @include desktop() {
-    width: 140px;
-    height: 140px;
+    width: 138px;
+    height: 138px;
   }
 }
 
@@ -87,14 +97,59 @@
   }
 
   @include desktop() {
-    width: 285px;
-    height: 285px;
+    width: 284px;
+    height: 284px;
   }
 }
 
 .gallery-item--solo {
-  margin-bottom: 45px;
-  margin-top: 45px;
+  margin-bottom: 44px;
+  margin-top: 44px;
+
+  @include tablet {
+    margin-bottom: 105px;
+    margin-top: 105px;
+  }
+  @include desktop {
+    margin-bottom: 138px;
+    margin-top: 138px;
+  }
+}
+
+.gallery-item--duo {
+  margin-top: 20px;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    margin-top: 65px;
+  }
+}
+
+.gallery-item--duo-half {
+  margin-top: 10px;
+
+  @include tablet {
+    margin-top: 20px;
+  }
+
+  @include desktop {
+    margin-top: 30px;
+  }
+}
+
+.gallery-item--left {
+  margin-right: 44px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  @include desktop {
+    margin-right: 0;
+  }
 }
 
 .gallery__image {

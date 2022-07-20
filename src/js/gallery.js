@@ -1,11 +1,10 @@
 $(document).ready(function () {
-  var gallary = $('#gallery');
-
-  gallary.imagesLoaded(function () {
-    gallary.masonry({
+  var gallery = $('#gallery');
+  gallery.imagesLoaded(function () {
+    gallery.masonry({
       itemSelector: '.gallery-item',
       columnWidth: '.gallery-sizer',
-      gutter: 2.5,
+      gutter: 1,
       // originTop: false,
       // percentPosition: true,
     });

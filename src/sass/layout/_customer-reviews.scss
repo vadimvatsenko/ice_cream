@@ -1,9 +1,4 @@
-// .reviews-picture {}
-
 .slider {
-  // opacity: 1;
-  // transition-duration: 500ms;
-  // transition-property: opacity;
   opacity: 1;
   transform: translateY(0);
   transition-duration: 1000ms;
@@ -85,19 +80,12 @@
   background-position-y: 1px;
 }
 
-.review::after {
-  content: '';
-  border-bottom: 5px solid black;
-  width: 30px;
-  height: 30px;
-}
-
-.review__icon {
-  z-index: 0;
-  top: 30px;
-  left: 30px;
+.review::before {
+  content: url('../images/icons/quote.svg');
+  //background-image: url('../images/icons/quote.svg');
   position: absolute;
-  fill: #e1e1e1;
+  top: 20px;
+  left: 20px;
 }
 
 .reviews-carusel {
@@ -149,6 +137,10 @@
   height: 12px;
   border-radius: 50%;
   background-color: #d9d9d9;
+}
+
+.reviews-carusel__swipe-home {
+  cursor: pointer;
 }
 
 .reviews-carusel__icon {
