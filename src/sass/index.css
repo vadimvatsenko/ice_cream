@@ -2026,7 +2026,7 @@ input[type=number] {
   }
 }
 
-.section .gallary {
+.gallary-section {
   padding-top: 30px;
   background-image: linear-gradient(to bottom, #FFF5F6 60px, #FFFFFF 60px, #FFFFFF 100%);
 }
