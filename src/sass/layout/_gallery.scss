@@ -9,9 +9,10 @@
 // }
 .gallary-section {
   background-image: linear-gradient(to bottom,
-      $mainBgColor 25px,
-      $thirdTexColor 25px,
+      $mainBgColor 20px,
+      $thirdTexColor 20px,
     );
+  padding-top: 0;
 
 
   @include tablet {
@@ -19,12 +20,15 @@
         $mainBgColor 170px,
         $thirdTexColor 170px,
       );
+    padding-bottom: 60px;
 
     @include desktop {
       background-image: linear-gradient(to bottom,
-          $mainBgColor 150px,
-          $thirdTexColor 150px,
+          $mainBgColor 130px,
+          $thirdTexColor 130px,
         );
+      padding-bottom: 120px;
+      padding-top: 60px;
     }
   }
 }
