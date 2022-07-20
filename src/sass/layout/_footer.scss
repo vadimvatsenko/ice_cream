@@ -26,16 +26,16 @@
   padding: 0 17px;
   background-color: $currentBgGolor;
   color: $thirdTexColor;
-
-
+  fill: currentColor;
   @include transition(all);
 
 
 
   &:hover,
   &:focus {
-    background-color: $thirdTexColor;
+    background-color: $hoverLiteButton;
     color: $currentBgGolor;
+
 
   }
 
@@ -45,16 +45,17 @@
   }
 }
 
-.ftr__button--white {
+.ftr__button--lite {
   background-color: $thirdTexColor;
   color: $mainTextColor;
 
   @include transition(background-color);
 }
 
-.ftr__button--white:hover,
-.ftr__button--white:focus {
+.ftr__button--lite:hover,
+.ftr__button--lite:focus {
   background-color: $hoverLiteButton;
+  fill: currentColor;
 }
 
 .ftr-button__icon {
@@ -169,7 +170,7 @@
   display: flex;
   justify-content: flex-end;
 
-  & .ftr__social__icon + .ftr__social__icon {
+  & .ftr__social__icon+.ftr__social__icon {
     padding-left: 30px;
   }
 
@@ -201,12 +202,23 @@
 }
 
 .ftr__copyright__holder {
+  padding-top: 7px;
+  padding-bottom: 4px;
   width: 100%;
   border-top: 1px solid #e1e1e1;
+
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @include desktop {
+    padding-top: 16px;
+    padding-bottom: 1px;
+  }
 }
 
 .ftr__copyright__holder--title {
-  padding-top: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
@@ -216,7 +228,7 @@
   @media screen and (min-width: 320px) {
     margin: 0 auto;
     width: 150px;
-    padding-bottom: 3px;
+
   }
 
   @media screen and (min-width: 768px) {
