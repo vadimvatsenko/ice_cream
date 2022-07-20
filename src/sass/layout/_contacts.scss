@@ -1,40 +1,47 @@
 .contacts {
-    padding: 0;
-    background-image: linear-gradient(to bottom,
-            $thirdTexColor 24%,
-            $mainBgColor 24%);
+  padding: 0;
+  background-image: linear-gradient(
+    to bottom,
+    $thirdTexColor 24%,
+    $mainBgColor 24%
+  );
 
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(to bottom,
-                $thirdTexColor 55%,
-                $mainBgColor 55%);
-    }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      $thirdTexColor 55%,
+      $mainBgColor 55%
+    );
+  }
 
-    @media screen and (min-width: 1200px) {
-        background-image: linear-gradient(to bottom,
-                $thirdTexColor 19%,
-                $mainBgColor 19%);
-    }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      $thirdTexColor 19%,
+      $mainBgColor 19%
+    );
+  }
 }
 
-.contacts__item+.contacts__item {
-    margin-top: 25px;
+.contacts__item + .contacts__item {
+  margin-top: 25px;
 
-    @media screen and (min-width: 768px) {
-        margin-left: 32px;
-        margin-top: 0;
-    }
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    margin-top: 0;
+  }
 }
 
 .contacts__list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contacts__item {
+
     padding: 40px 32px;
     background-color: $thirdTexColor;
     max-width: 280px;
@@ -57,148 +64,149 @@
         // height: 538px;
         padding: 40px;
     }
+
 }
 
 .contacts__card-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80px;
-    margin-bottom: 20px;
-    padding: auto;
-    background-color: $thirdBgColor;
-    color: $thirdTexColor;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80px;
+  margin-bottom: 20px;
+  padding: auto;
+  background-color: $thirdBgColor;
+  color: $thirdTexColor;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        margin-bottom: 32px;
-        width: 73px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+    width: 73px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 75px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 75px;
+  }
 }
 
 .contacts__card-name--green {
-    width: 130px;
-    background-color: $fourthBgColor;
+  width: 130px;
+  background-color: $fourthBgColor;
 
-    @media screen and (min-width: 768px) {
-        width: 138px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 138px;
+  }
 }
 
 .contacts__card-town {
-    color: black;
-    margin-bottom: 8px;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
+  color: black;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        font-size: 14px;
-        margin-bottom: 12px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__card-title {
-    color: $fifthTextColor;
-    width: 179px;
-    margin-bottom: 24px;
-    font-size: 12px;
-    line-height: 18px;
+  color: $fifthTextColor;
+  width: 179px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 18px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        width: 159px;
-        margin-bottom: 32px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    width: 159px;
+    margin-bottom: 32px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        width: 243px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    width: 243px;
+  }
 }
 
 .contacts__list-meta {
-    border-top: 1px solid #E1E1E1;
-    border-bottom: 1px solid #E1E1E1;
-    padding: 24px 0;
-    margin-bottom: 24px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 24px 0;
+  margin-bottom: 24px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-        padding: 32px 0;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    padding: 32px 0;
+  }
 }
 
 .contacts__meta-day {
-    color: black;
-    font-size: 12px;
-    line-height: 1.86;
+  color: black;
+  font-size: 12px;
+  line-height: 1.86;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
-.contacts__item-meta+.contacts__item-meta {
-    margin-top: 8px;
+.contacts__item-meta + .contacts__item-meta {
+  margin-top: 8px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 12px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
+  }
 }
 
 .contacts__meta-time {
-    color: $secondTextColor;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.86;
+  color: $secondTextColor;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.86;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__card-link {
-    color: $fifthTextColor;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.50;
-    @include transition (color);
+  color: $fifthTextColor;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  @include transition(color);
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__card-link:hover,
 .contacts__card-link:focus {
-    color: $mainTextColor;
-    cursor: pointer;
+  color: $mainTextColor;
+  cursor: pointer;
 }
 
 // map-map
@@ -221,60 +229,59 @@
 //     transition: 0.5s all;
 // }
 .map__bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    opacity: 1;
-    visibility: visible;
-    background-color: rgba(0, 0, 0, 0.2);
-    @include transition (opacity);
-    overflow-y: auto;
-    transition: all 0.8s ease 0s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.2);
+  @include transition(opacity);
+  overflow-y: auto;
+  transition: all 250ms ease 0s;
 }
 
 .map__bg.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .map__bg .map {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .map__bg.is-hidden .map {
-    transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
+  transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
 }
 
 .map {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 40px;
-    // transform: translate(-50%, -50%) scale(0);
-    border-radius: 22px;
-    background: $secondBgColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  // transform: translate(-50%, -50%) scale(0);
+  border-radius: 22px;
+  background: $secondBgColor;
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
+  opacity: 0;
+  transition: all 250ms ease 0s;
+
+  @include tablet {
     width: calc(100vw - 30px);
-    height: calc(100vh - 30px);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
+    height: calc(100vh - 50px);
+  }
 
-    @include tablet {
-        width: calc(100vw - 30px);
-        height: calc(100vh - 50px);
-    }
+  @include desktop {
+    width: 1000px;
+    height: calc(100vh - 100px);
+  }
 
-    @include desktop {
-        width: 1000px;
-        height: calc(100vh - 100px);
-    }
-
-
-    // transition: 250ms all;
+  // transition: 250ms all;
 }
 
 // .map.active {
@@ -283,25 +290,25 @@
 // }
 
 .close-map {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: $currentBgGolor;
-    transition: background-color linear 250ms;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $currentBgGolor;
+  transition: background-color linear 250ms;
 
-    &:hover,
-    &:focus {
-        background-color: $mainBgColor;
-    }
+  &:hover,
+  &:focus {
+    background-color: $mainBgColor;
+  }
 }
 
 .g-map {
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
 }
 
 //franchise
@@ -325,57 +332,56 @@
 
 // ++
 .popup__bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    opacity: 1;
-    visibility: visible;
-    background-color: rgba(0, 0, 0, 0.2);
-    @include transition (opacity);
-    overflow-y: auto;
-    transition: all 0.8s ease 0s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.2);
+  @include transition(opacity);
+  overflow-y: auto;
+  transition: all 250ms ease 0s;
 }
 
 .popup__bg .popap {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .popup__bg.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .popup__bg.is-hidden .popup {
-    transform: translate(-80%, -100%) scale(0.1) rotate(180deg);
+  transform: translate(-80%, -100%) scale(0.1) rotate(180deg);
 }
 
 .popup__bg .popup {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
-
 .popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: #fff;
-    border-radius: 10px;
-    width: calc(100vw - 30px);
-    max-width: 450px;
-    opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  border-radius: 10px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
+  opacity: 0;
 
-    @include tablet {
-        width: 450px;
-    }
+  @include tablet {
+    width: 450px;
+  }
 
-    padding: 25px;
-    transition: 0.5s all;
+  padding: 25px;
+  transition: 0.5s all;
 }
 
 // ===
@@ -384,7 +390,6 @@
 //     transition: 0.5s all;
 // }
 // ===
-
 
 // .close-popup {
 //     position: absolute;
@@ -403,72 +408,71 @@
 // }
 
 .popup label {
-    width: 100%;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column-reverse;
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .popup .label__text {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $secondBgColor;
-    margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $secondBgColor;
+  margin-bottom: 5px;
 }
 
 .popup input {
-    height: 45px;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid $secondBgColor;
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $secondBgColor;
 }
 
 .popup__text {
-    color: $mainTextColor;
+  color: $mainTextColor;
 }
 
 .popup input:focus {
-    border-bottom: 1px solid $currentBgGolor;
+  border-bottom: 1px solid $currentBgGolor;
 }
 
-.popup input:focus+.label__text {
-    color: $currentBgGolor;
+.popup input:focus + .label__text {
+  color: $currentBgGolor;
 }
 
 .popup textarea {
-    resize: none;
-    width: 100%;
-    height: 150px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid $secondBgColor;
-    font-size: 18px;
-    padding-top: 5px;
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $secondBgColor;
+  font-size: 18px;
+  padding-top: 5px;
 }
 
 .popup textarea:focus {
-    border-bottom: 1px solid $currentBgGolor;
+  border-bottom: 1px solid $currentBgGolor;
 }
 
-.popup textarea:focus+.label__text {
-    color: $currentBgGolor;
+.popup textarea:focus + .label__text {
+  color: $currentBgGolor;
 }
 
 .button-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 32px;
 
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        margin-top: 60px;
-    }
-
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 60px;
+  }
 }
 
 // .popup button {
