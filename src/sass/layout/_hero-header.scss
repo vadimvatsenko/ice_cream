@@ -40,7 +40,7 @@ header {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 320px;
+    width: 254px;
     z-index: 2;
     overflow-y: auto;
     box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
@@ -192,7 +192,7 @@ header {
     }
 
     @include desktop {
-        padding-top: 60px;
+        margin-top: 60px;
         width: 277px;
 
         font-family: 'Titan One';
@@ -271,7 +271,7 @@ header {
 /*---hero__number*/
 .hero__number {
     @include desktop {
-        padding-top: 72px;
+        margin-top: 72px;
     }
 }
 
@@ -522,10 +522,11 @@ header {
     @include tablet {
         display: flex;
         justify-content: space-between;
+        margin-top: 20px;
     }
 
     @include desktop {
-        padding-top: 40px;
+        margin-top: 40px;
     }
 }
 
@@ -534,14 +535,14 @@ header {
         display: flex;
         left: 0;
         bottom: 0;
-        padding-bottom: 16px;
+        
     }
 
     @include desktop {
         display: flex;
         left: 0;
         bottom: 0;
-        padding-bottom: 16px;
+        
     }
 }
 
@@ -556,7 +557,7 @@ header {
     @include tablet {
         width: 114px;
         height: 48px;
-        padding-top: 60px;
+        margin-top: 60px;
 
         font-family: 'DM Sans';
         font-style: normal;
@@ -580,7 +581,7 @@ header {
 
 .hero__text {
     @include desktop {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -589,12 +590,12 @@ header {
 
     @include tablet {
         display: flex;
-        padding-top: 25px;
+        margin-top: 20px;
     }
 
     @include desktop {
         position: relative;
-        padding-top: 15px;
+        margin-top: 20px;
     }
 }
 
